@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "app-price": "/components/page-component/goods/app-price",
+    "app-member-mark": "/components/page-component/app-member-mark/app-member-mark",
+    "app-share-qr-code": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster",
+    "app-join-member": "/components/page-component/app-join-member/app-join-member",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip",
+    "app-goods-quick-share": "/components/page-component/goods/app-goods-quick-share"
+  },
+  "component": true
+}

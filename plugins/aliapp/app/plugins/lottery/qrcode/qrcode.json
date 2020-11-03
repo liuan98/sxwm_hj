@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "客服",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

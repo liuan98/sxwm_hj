@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "售后列表",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-load-text": "/components/basic-component/app-load-text/app-load-text",
+    "app-order-goods-info": "/components/page-component/app-order-goods-info/app-order-goods-info"
+  }
+}

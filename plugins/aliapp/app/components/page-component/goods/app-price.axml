@@ -1,0 +1,1 @@
+<block a:if="{{actual.price!=-1}}"><view class="app-price t-omit data-v-69366529"><text class="{{(('data-v-69366529')+' '+actual.type)}}">{{actual.price}}</text></view></block>

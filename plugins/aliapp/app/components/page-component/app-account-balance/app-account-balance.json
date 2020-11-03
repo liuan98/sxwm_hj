@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-account-style": "/components/page-component/app-account-balance/app-account-style"
+  },
+  "component": true
+}

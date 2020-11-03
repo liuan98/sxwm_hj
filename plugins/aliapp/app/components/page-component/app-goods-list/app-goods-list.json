@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-image": "/components/basic-component/app-image/app-image",
+    "app-price": "/components/page-component/goods/app-price",
+    "app-attr": "/components/page-component/app-attr/app-attr",
+    "app-pt-attr": "/components/page-component/app-pt-attr/app-pt-attr",
+    "app-member-price": "/components/page-component/app-member-mark/app-member-price",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x"
+  }
+}

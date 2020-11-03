@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "商品列表",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-product-list": "/components/page-component/app-product-list/app-product-list",
+    "app-sort-rule": "/components/page-component/app-sort-rule/app-sort-rule",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods"
+  }
+}

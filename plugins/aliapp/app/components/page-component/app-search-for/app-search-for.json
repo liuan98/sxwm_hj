@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-input": "/components/basic-component/app-input/app-input"
+  },
+  "component": true
+}

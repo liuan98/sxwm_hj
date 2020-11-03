@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "直播详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

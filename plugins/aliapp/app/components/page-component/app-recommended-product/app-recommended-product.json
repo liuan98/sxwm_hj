@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-attr": "/components/page-component/app-attr/app-attr"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-quick-navigation": "/components/page-component/app-quick-navigation/app-quick-navigation",
+    "app-rich-text": "/components/basic-component/app-rich/parse",
+    "app-goods-banner": "/components/page-component/goods/app-goods-banner",
+    "app-service": "/components/page-component/goods/app-goods-service",
+    "app-share-qr-code": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster",
+    "app-iphonex-bottom": "/components/page-component/app-iphonex-bottom/app-iphonex-bottom",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "app-goods-marketing": "/components/page-component/goods/app-goods-marketing"
+  }
+}

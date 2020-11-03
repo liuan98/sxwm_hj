@@ -1,0 +1,10 @@
+;my.defineComponent || (my.defineComponent = Component);(my["webpackJsonp"]=my["webpackJsonp"]||[]).push([["plugins/gift/components/detail/win-order"],{"419f":function(t,n,e){"use strict";e.r(n);var r=e("b974"),i=e.n(r);for(var o in r)"default"!==o&&function(t){e.d(n,t,function(){return r[t]})}(o);n["default"]=i.a},"61ce":function(t,n,e){"use strict";var r=e("f962"),i=e.n(r);i.a},a1cb:function(t,n,e){"use strict";var r=function(){var t=this,n=t.$createElement,e=(t._self._c,t.__map(t.order_list,function(n,e){var r=t._f("getPicUrl")(n);return{$orig:t.__get_orig(n),f0:r}}));t.$mp.data=Object.assign({},{$root:{l0:e}})},i=[];e.d(n,"a",function(){return r}),e.d(n,"b",function(){return i})},b974:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={name:"win-order",props:["order_list","status_num"],methods:{route_go:function(n){t.navigateTo({url:n})},setSwitch:function(t){this.$emit("setSwitch",t)},previewImage:function(n,e){t.previewImage({urls:n,current:e,longPressActions:{itemList:["发送给朋友","保存图片"],success:function(){},fail:function(){}}})}},filters:{getPicUrl:function(t){var n="[object String]"===Object.prototype.toString.call(t.goods_info)?JSON.parse(t.goods_info).goods_attr:t.goods_info.goods_attr;return n.pic_url?n.pic_url:t.cover_pic}}};n.default=e}).call(this,e("c11b")["default"])},f4a3:function(t,n,e){"use strict";e.r(n);var r=e("a1cb"),i=e("419f");for(var o in i)"default"!==o&&function(t){e.d(n,t,function(){return i[t]})}(o);e("61ce");var c=e("2877"),u=Object(c["a"])(i["default"],r["a"],r["b"],!1,null,"24b0e6fb",null);n["default"]=u.exports},f962:function(t,n,e){}}]);
+;(my["webpackJsonp"] = my["webpackJsonp"] || []).push([
+    'plugins/gift/components/detail/win-order-create-component',
+    {
+        'plugins/gift/components/detail/win-order-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('c11b')['createComponent'](__webpack_require__("f4a3"))
+        })
+    },
+    [['plugins/gift/components/detail/win-order-create-component']]
+]);                

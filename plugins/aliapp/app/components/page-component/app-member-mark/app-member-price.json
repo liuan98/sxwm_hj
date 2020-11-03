@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-member-mark": "/components/page-component/app-member-mark/app-member-mark",
+    "app-price": "/components/page-component/goods/app-price"
+  },
+  "component": true
+}

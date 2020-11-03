@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "结算",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-input": "/components/basic-component/app-input/app-input",
+    "app-diy-form": "/components/page-component/app-diy-form/app-diy-form",
+    "app-radio": "/components/basic-component/app-radio/app-radio",
+    "app-order-submit-row": "/pages/order-submit/app-order-submit-row"
+  }
+}

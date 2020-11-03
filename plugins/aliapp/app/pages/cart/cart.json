@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "购物车",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-shop-product": "/pages/cart/components/app-shop-product/app-shop-product",
+    "app-radio": "/components/basic-component/app-radio/app-radio",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "绑定手机号",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-phone-binding": "/components/page-component/app-phone-binding/app-phone-binding"
+  }
+}

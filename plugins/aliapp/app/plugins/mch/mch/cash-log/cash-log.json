@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "提现记录",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

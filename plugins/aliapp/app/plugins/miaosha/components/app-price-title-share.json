@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-share-qr-code": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "申请提现",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

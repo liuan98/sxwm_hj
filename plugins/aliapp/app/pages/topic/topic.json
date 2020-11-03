@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "专题详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-rich-text": "/components/basic-component/app-rich/parse",
+    "app-share-qr-code-poster": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-video": "/components/page-component/app-video/app-video",
+    "app-image-ad": "/components/page-component/app-image-ad/app-image-ad",
+    "app-hotspot": "/components/basic-component/app-hotspot/app-hotspot"
+  }
+}

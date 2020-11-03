@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "领券中心",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

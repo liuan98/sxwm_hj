@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "中奖记录",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-button": "/components/basic-component/app-button/app-button"
+  }
+}

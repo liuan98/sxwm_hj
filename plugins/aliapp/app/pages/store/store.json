@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "门店列表",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-shop": "/components/page-component/app-shop/app-shop"
+  }
+}

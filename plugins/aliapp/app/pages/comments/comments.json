@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "全部评价",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-comments": "/components/page-component/app-comments/app-comments"
+  }
+}

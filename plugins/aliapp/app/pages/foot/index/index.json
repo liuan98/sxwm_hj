@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "我的足迹",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "分销订单",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-tab-nav": "/components/basic-component/app-tab-nav/app-tab-nav"
+  }
+}

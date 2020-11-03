@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "预售搜索",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "index-product-list": "/plugins/advance/components/index-product-list"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "店铺详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-swiper": "/components/page-component/app-swiper/app-swiper",
+    "app-rich-text": "/components/basic-component/app-rich/parse"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "卡券",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

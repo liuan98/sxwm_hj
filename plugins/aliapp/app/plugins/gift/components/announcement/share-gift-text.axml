@@ -1,0 +1,1 @@
+<view class="page-width ready-send data-v-a3127262"><view class="big data-v-a3127262">{{''+big+''}}</view><block a:if="{{small}}"><view class="small data-v-a3127262">{{''+small+''}}</view></block></view>

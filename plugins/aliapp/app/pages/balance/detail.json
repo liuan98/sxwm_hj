@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "余额说明",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

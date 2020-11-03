@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "余额记录",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button"
+  }
+}

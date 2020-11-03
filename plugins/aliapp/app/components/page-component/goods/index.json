@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "video-new": "/components/page-component/goods/app-goods-video"
+  },
+  "component": true
+}

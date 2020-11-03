@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "选择地址",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "app-shipping-address": "/components/page-component/app-shipping-address/app-shipping-address"
+  }
+}

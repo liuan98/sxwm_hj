@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "推广二维码",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

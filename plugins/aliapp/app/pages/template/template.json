@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "模板消息测试",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button"
+  }
+}

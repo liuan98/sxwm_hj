@@ -1,0 +1,14 @@
+{
+  "defaultTitle": "快速购买",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "app-add-subtract": "/pages/quick-shop/components/app-add-subtract/app-add-subtract",
+    "app-attr": "/components/page-component/app-attr/app-attr",
+    "app-load-text": "/components/basic-component/app-load-text/app-load-text",
+    "app-member-price": "/components/page-component/app-member-mark/app-member-price",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip"
+  }
+}

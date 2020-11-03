@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-video": "/components/page-component/app-video/app-video",
+    "app-goods-video": "/components/page-component/goods/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "app-member-price": "/components/page-component/app-member-mark/app-member-price",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip",
+    "app-attr": "/components/page-component/app-attr/app-attr"
+  },
+  "component": true
+}

@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "商品管理",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-tab-nav": "/components/basic-component/app-tab-nav/app-tab-nav"
+  }
+}

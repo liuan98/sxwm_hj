@@ -1,0 +1,10 @@
+;my.defineComponent || (my.defineComponent = Component);(my["webpackJsonp"]=my["webpackJsonp"]||[]).push([["components/basic-component/app-report-error/app-report-error"],{"0d9e":function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var o=function(){return Promise.all([e.e("common/vendor"),e.e("components/basic-component/app-form-id/app-form-id")]).then(e.bind(null,"8ee9"))},r={name:"app-prompt-dialog",components:{"app-form-button":o},props:{content:String},computed:{},methods:{handleClick:function(t){this.$emit("toastModelClick",t)},copyText:function(){this.$store.dispatch("gConfig/reportAndErrorB",!1),my.setClipboard({text:this.content,success:function(t){console.log(t)}})},refreshPage:function(){this.$store.dispatch("gConfig/reportAndErrorB",!1)}}};n.default=r},1031:function(t,n,e){"use strict";e.r(n);var o=e("9de1"),r=e("b5f7");for(var c in r)"default"!==c&&function(t){e.d(n,t,function(){return r[t]})}(c);e("da28");var i=e("2877"),a=Object(i["a"])(r["default"],o["a"],o["b"],!1,null,"20283d36",null);n["default"]=a.exports},"52a7":function(t,n,e){},"9de1":function(t,n,e){"use strict";var o=function(){var t=this,n=t.$createElement;t._self._c},r=[];e.d(n,"a",function(){return o}),e.d(n,"b",function(){return r})},b5f7:function(t,n,e){"use strict";e.r(n);var o=e("0d9e"),r=e.n(o);for(var c in o)"default"!==c&&function(t){e.d(n,t,function(){return o[t]})}(c);n["default"]=r.a},da28:function(t,n,e){"use strict";var o=e("52a7"),r=e.n(o);r.a}}]);
+;(my["webpackJsonp"] = my["webpackJsonp"] || []).push([
+    'components/basic-component/app-report-error/app-report-error-create-component',
+    {
+        'components/basic-component/app-report-error/app-report-error-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('c11b')['createComponent'](__webpack_require__("1031"))
+        })
+    },
+    [['components/basic-component/app-report-error/app-report-error-create-component']]
+]);                

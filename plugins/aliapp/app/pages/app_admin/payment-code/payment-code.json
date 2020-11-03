@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "收款码",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

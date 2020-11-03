@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x"
+  },
+  "component": true
+}

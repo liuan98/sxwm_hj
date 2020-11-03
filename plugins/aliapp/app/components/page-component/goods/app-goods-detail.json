@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-rich-text": "/components/basic-component/app-rich/parse",
+    "app-comments": "/components/page-component/app-comments/app-comments"
+  },
+  "component": true
+}

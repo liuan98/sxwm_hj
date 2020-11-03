@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-goods-list": "/components/page-component/app-goods-list/app-goods-list"
+  }
+}

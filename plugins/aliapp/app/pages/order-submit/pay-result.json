@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "提交完成",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-related-suggestion-product": "/components/page-component/app-related-suggestion-product/app-related-suggestion-product",
+    "app-order-share-modal": "/components/page-component/app-order-share-modal/app-order-share-modal"
+  }
+}

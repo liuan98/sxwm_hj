@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-form-button": "/components/basic-component/app-form-id/app-form-id"
+  },
+  "component": true
+}

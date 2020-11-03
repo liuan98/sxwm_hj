@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "拼团详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-detail-top": "/plugins/pt/components/app-detail-top",
+    "app-group-short": "/plugins/pt/components/app-group-avatar-short",
+    "app-product-list": "/plugins/pt/components/app-product-list"
+  }
+}

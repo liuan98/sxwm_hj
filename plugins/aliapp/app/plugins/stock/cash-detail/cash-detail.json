@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "提现明细",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-tab-nav": "/components/basic-component/app-tab-nav/app-tab-nav"
+  }
+}

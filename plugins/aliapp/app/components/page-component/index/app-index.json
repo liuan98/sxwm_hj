@@ -1,0 +1,24 @@
+{
+  "usingComponents": {
+    "app-search-for": "/components/page-component/app-search-for/app-search-for",
+    "app-swiper": "/components/page-component/app-swiper/swiper",
+    "app-navigation-icon": "/components/page-component/app-navigation-icon/app-navigation-icon",
+    "app-announcement": "/components/page-component/app-announcement/app-announcement",
+    "app-video": "/components/page-component/app-video/app-video",
+    "app-topic": "/components/page-component/app-special-topic/app-special-topic-normal",
+    "app-exclusive-coupon": "/components/page-component/app-exclusive-coupon/app-exclusive-coupon",
+    "app-image-ad": "/components/page-component/app-image-ad/app-image-ad",
+    "app-reservation": "/components/page-component/app-reservation/app-reservation",
+    "app-good-shop-recommendation": "/components/page-component/app-good-shop-recommendation/app-good-shop-recommendation",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-timer": "/components/basic-component/app-timer/app-timer",
+    "app-quick-navigation": "/components/page-component/app-quick-navigation/app-quick-navigation",
+    "app-popup-ad": "/components/page-component/app-popup-ad/app-popup-ad",
+    "app-index-miaosha": "/components/page-component/app-index-miaosha/app-index-miaosha",
+    "app-index-pintuan": "/components/page-component/app-index-pintuan/app-index-pintuan",
+    "app-index-booking": "/components/page-component/app-index-booking/app-index-booking",
+    "app-index-cat": "/components/page-component/app-index-cat/app-index-cat",
+    "app-index-advance": "/components/page-component/app-index-advance/app-index-advance"
+  },
+  "component": true
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "物流信息",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

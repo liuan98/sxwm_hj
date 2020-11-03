@@ -1,0 +1,23 @@
+{
+  "defaultTitle": "秒杀详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-banner": "/components/page-component/goods/app-goods-banner",
+    "app-goods-time": "/plugins/miaosha/components/app-goods-time",
+    "app-merchant-guarantee": "/plugins/miaosha/components/app-merchant-guarantee",
+    "app-price-title-share": "/plugins/miaosha/components/app-price-title-share",
+    "app-attr": "/components/page-component/app-attr/app-attr",
+    "app-goods-attr": "/components/page-component/goods/app-goods-attr",
+    "app-related-suggestion-product": "/components/page-component/app-related-suggestion-product/app-related-suggestion-product",
+    "app-goods-service": "/components/page-component/goods/app-goods-service",
+    "app-goods-marketing": "/components/page-component/goods/app-goods-marketing",
+    "app-join-member": "/components/page-component/app-join-member/app-join-member",
+    "app-goods-detail": "/components/page-component/goods/app-goods-detail",
+    "app-iphone-bottom": "/components/page-component/app-iphonex-bottom/app-iphonex-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-vip-card": "/components/page-component/app-vip-card/app-vip-card"
+  }
+}

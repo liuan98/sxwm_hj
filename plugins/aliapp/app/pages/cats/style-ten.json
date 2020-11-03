@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "app-category-list": "/components/page-component/app-category-list/app-category-list",
+    "product-list": "/pages/cats/product-list",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods",
+    "goods-list": "/pages/cats/goods-list",
+    "second-class": "/pages/cats/second-class"
+  },
+  "component": true
+}

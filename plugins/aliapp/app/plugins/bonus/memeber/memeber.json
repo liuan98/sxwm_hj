@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "队员",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-rich-text": "/components/basic-component/app-rich/parse"
+  }
+}

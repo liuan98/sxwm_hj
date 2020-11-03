@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-member-price": "/components/page-component/app-member-mark/app-member-price",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "砍价",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "app-load-text": "/components/basic-component/app-load-text/app-load-text",
+    "app-swiper": "/components/page-component/app-swiper/app-swiper",
+    "common-buttom": "/plugins/bargain/common-buttom",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x"
+  }
+}

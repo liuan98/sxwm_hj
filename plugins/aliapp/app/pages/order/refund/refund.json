@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "订单售后",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-textarea": "/components/basic-component/app-textarea/app-textarea",
+    "app-order-goods-info": "/components/page-component/app-order-goods-info/app-order-goods-info",
+    "app-switch-tab": "/components/basic-component/app-switch-tab/app-switch-tab",
+    "app-upload-image": "/components/basic-component/app-upload-image/app-upload-image"
+  }
+}

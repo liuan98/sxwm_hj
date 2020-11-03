@@ -1,0 +1,10 @@
+;my.defineComponent || (my.defineComponent = Component);(my["webpackJsonp"]=my["webpackJsonp"]||[]).push([["components/page-component/goods/app-goods-video"],{"49bb":function(t,e,n){"use strict";var o=function(){var t=this,e=t.$createElement;t._self._c},i=[];n.d(e,"a",function(){return o}),n.d(e,"b",function(){return i})},7789:function(t,e,n){"use strict";n.r(e);var o=n("95f6"),i=n.n(o);for(var a in o)"default"!==a&&function(t){n.d(e,t,function(){return o[t]})}(a);e["default"]=i.a},"95f6":function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n={props:{video_id:{type:Number,default:0},video_url:{type:String,default:""},play:{type:Boolean,default:!1},height:{type:String,default:""},width:{type:String,default:""}},data:function(){return{loading:!0}},methods:{videoPlay:function(){console.log("video_".concat(this.video_id)),this.videoCtx=t.createVideoContext("video_".concat(this.video_id),this),this.play?this.videoCtx.play():this.videoCtx.pause()},waiting:function(t){this.loading=!1,console.log(t)},pause:function(t){console.log("暂停")},setPlay:function(){this.loading=!0}},watch:{play:{handler:function(){console.log(1),this.videoPlay()}}}};e.default=n}).call(this,n("c11b")["default"])},"9eb5":function(t,e,n){"use strict";n.r(e);var o=n("49bb"),i=n("7789");for(var a in i)"default"!==a&&function(t){n.d(e,t,function(){return i[t]})}(a);n("c1e2");var u=n("2877"),c=Object(u["a"])(i["default"],o["a"],o["b"],!1,null,"49f760c8",null);e["default"]=c.exports},b971:function(t,e,n){},c1e2:function(t,e,n){"use strict";var o=n("b971"),i=n.n(o);i.a}}]);
+;(my["webpackJsonp"] = my["webpackJsonp"] || []).push([
+    'components/page-component/goods/app-goods-video-create-component',
+    {
+        'components/page-component/goods/app-goods-video-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('c11b')['createComponent'](__webpack_require__("9eb5"))
+        })
+    },
+    [['components/page-component/goods/app-goods-video-create-component']]
+]);                

@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "首页",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-index": "/components/page-component/index/app-index",
+    "app-diy-page": "/components/page-component/index/app-diy-page",
+    "app-buy-prompt": "/components/page-component/app-buy-prompt/app-buy-prompt",
+    "app-my-app": "/components/page-component/app-my-app/app-my-app"
+  }
+}

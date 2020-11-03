@@ -1,0 +1,1 @@
+<view class="app-layout data-v-cdf4cc24"><app-layout vue-id="1" class="data-v-cdf4cc24" onVueInit="__l"><view class="rule data-v-cdf4cc24"><text class="text data-v-cdf4cc24" space="nbsp">{{rules}}</text></view></app-layout></view>

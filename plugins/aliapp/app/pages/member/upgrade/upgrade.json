@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "升级会员",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

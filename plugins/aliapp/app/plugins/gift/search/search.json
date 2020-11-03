@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "搜索",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-product-list": "/components/page-component/app-product-list/app-product-list"
+  }
+}

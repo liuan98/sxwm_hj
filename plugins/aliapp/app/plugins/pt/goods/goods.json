@@ -1,0 +1,25 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-goods-banner": "/components/page-component/goods/app-goods-banner",
+    "app-pt-time": "/plugins/pt/components/app-pt-time",
+    "app-price-title-share": "/plugins/pt/components/app-price-title-share",
+    "app-join-member": "/components/page-component/app-join-member/app-join-member",
+    "app-merchant-guarantee": "/plugins/pt/components/app-merchant-guarantee",
+    "app-goods-attr": "/components/page-component/goods/app-goods-attr",
+    "app-attr": "/components/page-component/app-attr/app-attr",
+    "app-button-button": "/plugins/pt/components/app-buttom-button",
+    "app-pt-attr": "/plugins/pt/components/app-pt-attr",
+    "app-participant": "/plugins/pt/components/app-participant",
+    "app-related-suggestion-product": "/components/page-component/app-related-suggestion-product/app-related-suggestion-product",
+    "app-goods-detail": "/components/page-component/goods/app-goods-detail",
+    "app-quick-navigation": "/components/page-component/app-quick-navigation/app-quick-navigation",
+    "app-iphone-bottom": "/components/page-component/app-iphonex-bottom/app-iphonex-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-goods-service": "/components/page-component/goods/app-goods-service",
+    "app-vip-card": "/components/page-component/app-vip-card/app-vip-card",
+    "app-goods-marketing": "/components/page-component/goods/app-goods-marketing"
+  }
+}

@@ -1,0 +1,1 @@
+<scroll-view class="app-head-nav-list data-v-75de1234" scroll-x><block a:for="{{catList}}" a:for-item="item" a:for-index="index" a:key="index"><text data-event-opts="{{[['tap',[['active',['$0'],[[['catList','',index,'id']]]]]]]}}" class="{{(('app-item data-v-75de1234')+' '+((cat_id==item.id)?'app-active-item':''))}}" onTap="__e">{{item.name}}</text></block></scroll-view>

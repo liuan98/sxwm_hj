@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "商品",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-sort-rule": "/components/page-component/app-sort-rule/app-sort-rule",
+    "product-list": "/components/page-component/app-product-list/app-product-list",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods",
+    "search": "/plugins/gift/components/list/search"
+  }
+}

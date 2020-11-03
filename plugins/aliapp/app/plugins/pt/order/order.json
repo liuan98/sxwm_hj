@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "我的拼团",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-nav": "/plugins/pt/components/app-nav",
+    "app-order-list": "/plugins/pt/components/app-order-list"
+  }
+}

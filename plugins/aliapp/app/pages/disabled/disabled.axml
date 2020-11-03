@@ -1,0 +1,1 @@
+<app-layout vue-id="1" class="data-v-f2e8f5d4" onVueInit="__l"><view class="dir-top-nowrap cross-center box data-v-f2e8f5d4"><image class="disabled_img data-v-f2e8f5d4" src="{{picUrl}}"></image><text class="title data-v-f2e8f5d4">{{text}}</text><text class="content data-v-f2e8f5d4">请联系管理员</text></view></app-layout>

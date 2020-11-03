@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip"
+  },
+  "component": true
+}

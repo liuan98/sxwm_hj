@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "九宫格抽奖",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "app-share-qr-code-poster": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster"
+  }
+}

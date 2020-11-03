@@ -1,0 +1,1 @@
+<app-layout vue-id="1" class="data-v-070754b8" onVueInit="__l"><view class="page data-v-070754b8"><view class="top data-v-070754b8">签到规则</view><view class="rules data-v-070754b8"><text class="rule data-v-070754b8">{{rule}}</text></view></view></app-layout>

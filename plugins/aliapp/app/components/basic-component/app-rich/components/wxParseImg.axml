@@ -1,0 +1,1 @@
+<image class="{{(newNode.classStr)}}" style="{{(newStyleStr||newNode.styleStr)}}" lazy-load="{{newNode.attr.lazyLoad}}" data-src="{{newNode.attr.src}}" src="{{newNode.attr.src}}" data-event-opts="{{[['tap',[['wxParseImgTap',['$event']]]],['load',[['wxParseImgLoad',['$event']]]]]}}" onTap="__e" onLoad="__e"></image>

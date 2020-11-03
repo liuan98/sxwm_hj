@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-image": "/components/basic-component/app-image/app-image",
+    "app-price": "/components/page-component/goods/app-price",
+    "app-goods-timer": "/components/page-component/app-diy-goods-list/app-goods-timer",
+    "app-attr": "/components/page-component/app-attr/app-attr",
+    "app-member-price": "/components/page-component/app-member-mark/app-member-price",
+    "app-sup-vip": "/components/page-component/app-sup-vip/app-sup-vip"
+  }
+}

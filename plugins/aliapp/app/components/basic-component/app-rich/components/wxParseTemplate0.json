@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "weixin-parse-template": "/components/basic-component/app-rich/components/wxParseTemplate1",
+    "weixin-parse-img": "/components/basic-component/app-rich/components/wxParseImg",
+    "weixin-parse-video": "/components/basic-component/app-rich/components/wxParseVideo",
+    "weixin-parse-audio": "/components/basic-component/app-rich/components/wxParseAudio",
+    "weixin-parse-table": "/components/basic-component/app-rich/components/wxParseTable"
+  },
+  "component": true
+}

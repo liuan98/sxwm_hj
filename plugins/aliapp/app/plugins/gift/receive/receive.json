@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "送礼物",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "share-gift-text": "/plugins/gift/components/announcement/share-gift-text",
+    "receive-content": "/plugins/gift/components/receive/receive-content"
+  }
+}

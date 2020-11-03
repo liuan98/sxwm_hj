@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "账户明细",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-tab-nav": "/components/basic-component/app-tab-nav/app-tab-nav",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id"
+  }
+}

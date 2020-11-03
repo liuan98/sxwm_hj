@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "我的预约",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-head-navigation": "/plugins/book/components/app-head-navigation",
+    "app-reservation-form": "/plugins/book/components/app-reservation-form",
+    "app-prompt-box": "/components/basic-component/app-prompt-box/app-prompt-box",
+    "app-write-off-code": "/plugins/book/components/app-write-off-code"
+  }
+}

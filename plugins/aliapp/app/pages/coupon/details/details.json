@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "优惠券详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

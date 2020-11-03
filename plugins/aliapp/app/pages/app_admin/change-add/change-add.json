@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "修改地址",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-area-picker": "/components/page-component/app-area-picker/app-area-picker"
+  }
+}

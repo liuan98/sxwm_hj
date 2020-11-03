@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-model": "/components/basic-component/app-model/app-model"
+  },
+  "component": true
+}

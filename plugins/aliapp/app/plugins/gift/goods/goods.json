@@ -1,0 +1,19 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-goods-banner": "/components/page-component/goods/app-goods-banner",
+    "app-name": "/components/page-component/app-goods-detail/app-name",
+    "detail-parameter": "/plugins/gift/components/goods/detail-parameter",
+    "app-join-member": "/components/page-component/app-join-member/app-join-member",
+    "app-goods-detail": "/components/page-component/goods/app-goods-detail",
+    "app-vip-card": "/components/page-component/app-vip-card/app-vip-card",
+    "app-related-suggestion-product": "/components/page-component/app-related-suggestion-product/app-related-suggestion-product",
+    "app-goods-service": "/components/page-component/goods/app-goods-service",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x",
+    "bottom-button": "/plugins/gift/components/goods/bottom-button",
+    "show-attr": "/components/page-component/goods/app-goods-attr",
+    "app-attr": "/components/page-component/app-attr/app-attr"
+  }
+}

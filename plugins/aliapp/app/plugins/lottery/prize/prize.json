@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-load-text": "/components/basic-component/app-load-text/app-load-text",
+    "common-buttom": "/plugins/lottery/common-buttom"
+  }
+}

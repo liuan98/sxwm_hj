@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "送礼物",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "gift-navigation": "/plugins/gift/components/announcement/gift-navigation",
+    "switch-tab": "/plugins/gift/components/order/switch-tab",
+    "order-list": "/plugins/gift/components/order/order-list",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "order-win-list": "/plugins/gift/components/order/order-win-list",
+    "order-involved-list": "/plugins/gift/components/order/order-involved-list",
+    "app-share-qr-code-poster": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster"
+  }
+}

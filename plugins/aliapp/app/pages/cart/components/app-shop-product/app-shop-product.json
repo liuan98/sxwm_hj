@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-radio": "/components/basic-component/app-radio/app-radio",
+    "app-add-subtract": "/pages/cart/components/app-add-subtract/app-add-subtract"
+  },
+  "component": true
+}

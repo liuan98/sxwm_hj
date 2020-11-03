@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "分销佣金",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

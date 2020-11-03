@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "订单详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-store": "/plugins/book/components/app-store",
+    "app-prompt-box": "/components/basic-component/app-prompt-box/app-prompt-box",
+    "app-write-off-code": "/plugins/book/components/app-write-off-code"
+  }
+}

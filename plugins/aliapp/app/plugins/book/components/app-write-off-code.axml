@@ -1,0 +1,1 @@
+<block a:if="{{hidden}}"><view class="app-write-off-code data-v-6f85493c"><view class="app-content data-v-6f85493c"><view data-event-opts="{{[['tap',[['hiddenHandler',['$event']]]]]}}" class="app-icon data-v-6f85493c" onTap="__e"></view><view class="app-text data-v-6f85493c">核销码</view><image class="app-image data-v-6f85493c" src="{{file_path}}"></image></view></view></block>

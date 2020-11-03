@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-button": "/components/basic-component/app-button/app-button"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "会员中心",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

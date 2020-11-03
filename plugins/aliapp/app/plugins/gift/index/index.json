@@ -1,0 +1,14 @@
+{
+  "defaultTitle": "送礼物",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "pick-gift": "/plugins/gift/components/index/pick-gift",
+    "gift-method": "/plugins/gift/components/index/gift-method",
+    "blessing-message": "/plugins/gift/components/index/blessing-message",
+    "generate-package": "/plugins/gift/components/index/generate-package",
+    "gift-navigation": "/plugins/gift/components/announcement/gift-navigation",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "get-right-now": "/plugins/gift/components/index/get-right-now",
+    "voice": "/plugins/gift/components/index/voice"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-category-list": "/components/page-component/app-category-list/app-category-list",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods"
+  },
+  "component": true
+}

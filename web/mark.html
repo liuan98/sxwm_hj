@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Markers</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZxAbfgeDc2z6YUOaBs8b0NuQgm_cHLdw&callback=initMap&libraries=&v=weekly"
+		 defer></script>
+		<script src="jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+			#map {
+				height: 100%;
+				width: 100%;
+			}
+
+			/* Optional: Makes the sample page fill the window. */
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<script>
+			"use strict";
+			let blueCoords = [
+			// 	{
+			// 	"lat": 5.322564,
+			// 	"lng": -4.239522
+			// }, {
+			// 	"lat": 5.291263,
+			// 	"lng": -4.105797
+			// }, {
+			// 	"lat": 5.235345,
+			// 	"lng": -4.062711
+			// }, {
+			// 	"lat": 5.20466,
+			// 	"lng": -3.824337
+			// }, {
+			// 	"lat": 5.296327,
+			// 	"lng": -3.793727
+			// }, {
+			// 	"lat": 5.343545,
+			// 	"lng": -3.849635
+			// }, {
+			// 	"lat": 5.492138,
+			// 	"lng": -3.827684
+			// }, {
+			// 	"lat": 5.578081,
+			// 	"lng": -3.920135
+			// }, {
+			// 	"lat": 5.609345,
+			// 	"lng": -4.097729
+			// },
+			];
+
+			function getRequest() {
+				var url = location.search; //获取url中"?"符后的字串
+				var theRequest = new Object();
+				if (url.indexOf("?") != -1) {
+					var str = url.substr(1);
+					let strs = str.split("&");
+					for (var i = 0; i < strs.length; i++) {
+						theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+					}
+				}
+				return theRequest;
+			}
+			let polygon;
+
+			function getInfo() {
+				$.ajax({
+					url: "https://bellavieci.com/web/index.php?_mall_id=1&r=api/index/deny",
+					type: "get",
+					async: false,
+					success: (res => {
+						console.log(res)
+						blueCoords=res.data.list.range
+					})
+				})
+			}
+
+			function initMap() {
+				getInfo()
+				let lat = parseFloat(getRequest().lat);
+				let lng = parseFloat(getRequest().lng);
+				console.log(lat)
+				console.log(lng)
+				const myLatLng = {
+					lat: lat,
+					lng: lng
+				};
+				const map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 15,
+					center: myLatLng
+				});
+				let marker=new google.maps.Marker({
+					position: myLatLng,
+					map,
+					
+
+				});
+				var infowindow = new google.maps.InfoWindow({
+					content: `lat:${lat},lng:${lng}`
+				});
+				infowindow.open(map,marker)
+				polygon = new google.maps.Polygon({
+					map,
+					paths: blueCoords,
+					strokeColor: "#0000FF",
+					strokeOpacity: 0.8,
+					strokeWeight: 2,
+					fillColor: "#0000FF",
+					fillOpacity: 0.35,
+					draggable: false,
+					geodesic: false,
+					editable: false,
+
+				});
+				polygon.setMap(map)
+			}
+		</script>
+	</head>
+	<body>
+		<div id="map"></div>
+	</body>
+</html>

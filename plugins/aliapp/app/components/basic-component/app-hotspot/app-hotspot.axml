@@ -1,0 +1,1 @@
+<view class="app-hotspot data-v-53521f42" style="{{(aa)}}"><app-jump-button vue-id="1" open_type="{{hotspot.link.openType}}" url="{{hotspot.link.url}}" params="{{hotspot.link.params}}" class="data-v-53521f42" onVueInit="__l"><slot></slot></app-jump-button></view>

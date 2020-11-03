@@ -1,0 +1,1 @@
+<app-layout vue-id="1" class="data-v-989f78f0" onVueInit="__l"><view class="page data-v-989f78f0"><app-rich-text vue-id="{{('2')+','+('1')}}" loading="{{loading}}" content="{{list.content}}" class="data-v-989f78f0" onVueInit="__l"></app-rich-text></view></app-layout>

@@ -1,0 +1,10 @@
+;my.defineComponent || (my.defineComponent = Component);(my["webpackJsonp"]=my["webpackJsonp"]||[]).push([["pages/cats/style-nine"],{"0fe3":function(t,e,n){"use strict";n.r(e);var o=n("6d7a"),i=n.n(o);for(var s in o)"default"!==s&&function(t){n.d(e,t,function(){return o[t]})}(s);e["default"]=i.a},"6d7a":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o=function(){return n.e("components/page-component/app-category-list/app-category-list").then(n.bind(null,"5d3f"))},i=function(){return n.e("pages/cats/product-list").then(n.bind(null,"5236"))},s=function(){return n.e("pages/cats/goods-list").then(n.bind(null,"cc6d"))},u=function(){return n.e("components/page-component/app-no-goods/app-no-goods").then(n.bind(null,"8112"))},a={name:"style-nine",components:{"app-category-list":o,"product-list":i,"app-no-goods":u,"goods-list":s},props:["list","activeIndex","setHeight","goods_list"],methods:{active:function(t){this.$emit("requestGoods",t),this.$emit("active",t),this.$emit("page")},lower:function(){this.$emit("lower",this.list[this.activeIndex])},attr:function(t,e,n,o){this.$emit("attr",t,e,n,o)},route_advert:function(t){this.$emit("route_advert",t)}}};e.default=a},"7c2b":function(t,e,n){"use strict";n.r(e);var o=n("b968"),i=n("0fe3");for(var s in i)"default"!==s&&function(t){n.d(e,t,function(){return i[t]})}(s);n("e7e0");var u=n("2877"),a=Object(u["a"])(i["default"],o["a"],o["b"],!1,null,"d4cd696c",null);e["default"]=a.exports},b628:function(t,e,n){},b968:function(t,e,n){"use strict";var o=function(){var t=this,e=t.$createElement;t._self._c},i=[];n.d(e,"a",function(){return o}),n.d(e,"b",function(){return i})},e7e0:function(t,e,n){"use strict";var o=n("b628"),i=n.n(o);i.a}}]);
+;(my["webpackJsonp"] = my["webpackJsonp"] || []).push([
+    'pages/cats/style-nine-create-component',
+    {
+        'pages/cats/style-nine-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('c11b')['createComponent'](__webpack_require__("7c2b"))
+        })
+    },
+    [['pages/cats/style-nine-create-component']]
+]);                

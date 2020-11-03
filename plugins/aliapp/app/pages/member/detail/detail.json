@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "会员特权说明",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-rich-text": "/components/basic-component/app-rich/parse"
+  }
+}

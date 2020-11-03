@@ -1,0 +1,1 @@
+<app-layout vue-id="1" class="data-v-69194272" onVueInit="__l"><view class="bg data-v-69194272"><block a:for="{{desc}}" a:for-item="item" a:for-index="__i0__" a:key="*this"><view class="item data-v-69194272"><view class="item-q data-v-69194272">{{item.title}}</view><view class="item-a data-v-69194272">{{item.content}}</view></view></block></view></app-layout>

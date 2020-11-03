@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "快递信息",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

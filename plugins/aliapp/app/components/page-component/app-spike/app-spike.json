@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-jump-button": "/components/basic-component/app-jump-button/app-jump-button",
+    "app-load-text": "/components/basic-component/app-load-text/app-load-text",
+    "app-timer": "/components/basic-component/app-timer/app-timer"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "添加商品",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

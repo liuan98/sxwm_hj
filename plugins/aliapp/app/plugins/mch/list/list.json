@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "好店推荐",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-good-shop-recommendation": "/components/page-component/app-good-shop-recommendation/app-good-shop-recommendation"
+  }
+}

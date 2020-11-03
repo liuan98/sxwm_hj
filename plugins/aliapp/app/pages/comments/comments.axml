@@ -1,0 +1,1 @@
+<app-layout vue-id="1" onVueInit="__l"><block a:if="{{goodsId}}"><view><app-comments vue-id="{{('2')+','+('1')}}" show-type="all" goods-id="{{goodsId}}" reach-bottom="{{onReachBottom}}" onVueInit="__l"></app-comments></view></block></app-layout>

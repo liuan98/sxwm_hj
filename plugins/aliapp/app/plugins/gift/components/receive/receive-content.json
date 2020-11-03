@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "gift-over": "/plugins/gift/components/receive/gift-over",
+    "participant": "/plugins/gift/components/receive/participant",
+    "app-share-qr-code-poster": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster"
+  },
+  "component": true
+}

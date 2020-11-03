@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "分销商申请",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

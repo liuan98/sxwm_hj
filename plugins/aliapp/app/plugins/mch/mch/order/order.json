@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "订单管理",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

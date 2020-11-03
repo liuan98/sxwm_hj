@@ -1,0 +1,1 @@
+<view class="app-head-navigation dir-left-nowrap data-v-4c7bf364"><block a:for="{{list}}" a:for-item="item" a:for-index="index" a:key="index"><view data-event-opts="{{[['tap',[['active',['$0'],[[['list','',index,'id']]]]]]]}}" class="{{(('app-item data-v-4c7bf364')+' '+((activeIndex===item.id)?'app-active-item':''))}}" onTap="__e">{{item.name}}</view></block></view>

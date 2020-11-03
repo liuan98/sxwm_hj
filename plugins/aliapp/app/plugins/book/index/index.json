@@ -1,0 +1,10 @@
+{
+  "defaultTitle": "预约首页",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-head-nav-list": "/plugins/book/components/app-head-nav-list",
+    "app-product-list": "/plugins/book/components/app-product-list",
+    "app-quick-navigation": "/components/page-component/app-quick-navigation/app-quick-navigation",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods"
+  }
+}

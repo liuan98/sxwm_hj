@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-input": "/components/basic-component/app-input/app-input",
+    "app-form-id": "/components/basic-component/app-form-id/app-form-id",
+    "app-textarea": "/components/basic-component/app-textarea/app-textarea",
+    "app-upload-image": "/components/basic-component/app-upload-image/app-upload-image",
+    "app-diy-form-checkbox-group": "/components/page-component/app-diy-form/app-diy-form-checkbox-group",
+    "app-radio-group": "/components/basic-component/app-radio/app-radio-group",
+    "app-radio": "/components/basic-component/app-radio/app-radio",
+    "app-datetime-picker": "/components/basic-component/app-datetime-picker/app-datetime-picker"
+  }
+}

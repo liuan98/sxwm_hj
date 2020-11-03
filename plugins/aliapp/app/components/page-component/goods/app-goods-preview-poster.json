@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-button": "/components/basic-component/app-button/app-button"
+  }
+}

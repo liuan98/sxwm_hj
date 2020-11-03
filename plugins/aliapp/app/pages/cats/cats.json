@@ -1,0 +1,19 @@
+{
+  "defaultTitle": "分类",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-search-for": "/components/page-component/app-search-for/app-search-for",
+    "style-one": "/pages/cats/style-one",
+    "style-two": "/pages/cats/style-two",
+    "style-three": "/pages/cats/style-three",
+    "style-four": "/pages/cats/style-four",
+    "style-five": "/pages/cats/style-five",
+    "style-six": "/pages/cats/style-six",
+    "style-seven": "/pages/cats/style-seven",
+    "style-eight": "/pages/cats/style-eight",
+    "style-nine": "/pages/cats/style-nine",
+    "style-ten": "/pages/cats/style-ten",
+    "style-eleven": "/pages/cats/style-eleven",
+    "app-attr": "/components/page-component/app-attr/app-attr"
+  }
+}

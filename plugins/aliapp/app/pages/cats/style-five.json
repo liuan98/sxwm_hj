@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "app-head-navigation": "/components/page-component/app-head-navigation/app-head-navigation",
+    "app-product-list": "/components/page-component/app-product-list/app-product-list",
+    "app-no-goods": "/components/page-component/app-no-goods/app-no-goods"
+  },
+  "component": true
+}

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "我的砍价",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-button": "/components/basic-component/app-button/app-button",
+    "common-buttom": "/plugins/bargain/common-buttom"
+  }
+}

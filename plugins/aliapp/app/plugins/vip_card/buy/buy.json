@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "购买超级会员卡",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout"
+  }
+}

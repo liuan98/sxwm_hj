@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "订单评价",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-upload-image": "/components/basic-component/app-upload-image/app-upload-image"
+  }
+}

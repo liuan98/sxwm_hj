@@ -1,0 +1,14 @@
+{
+  "defaultTitle": "礼物详情",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "order": "/plugins/gift/components/detail/order",
+    "order-information": "/plugins/gift/components/detail/order-information",
+    "receiving-status": "/plugins/gift/components/detail/receiving-status",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "win-order": "/plugins/gift/components/detail/win-order",
+    "win-order-information": "/plugins/gift/components/detail/win-order-information",
+    "app-share-qr-code-poster": "/components/page-component/app-share-qr-code-poster/app-share-qr-code-poster",
+    "logistics": "/plugins/gift/components/detail/logistics"
+  }
+}

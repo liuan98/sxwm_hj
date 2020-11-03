@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "app-iphonex-bottom": "/components/page-component/app-iphonex-bottom/app-iphonex-bottom",
+    "app-empty-bottom": "/components/basic-component/app-empty-bottom/app-empty-bottom",
+    "app-iphone-x": "/components/basic-component/app-iphone-x/app-iphone-x"
+  },
+  "component": true
+}

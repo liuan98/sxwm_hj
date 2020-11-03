@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "商城设置",
+  "usingComponents": {
+    "app-layout": "/components/basic-component/app-layout/app-layout",
+    "app-switch": "/components/basic-component/app-switch/app-switch"
+  }
+}
