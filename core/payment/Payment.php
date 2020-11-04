@@ -16,6 +16,7 @@ use Alipay\AopClient;
 use app\forms\common\CommonOption;
 use app\forms\common\refund\BaseRefund;
 use app\forms\common\transfer\BaseTransfer;
+use app\models\MallSetting;
 use app\models\Option;
 use app\models\Order;
 use app\models\PaymentOrderUnion;
@@ -119,6 +120,7 @@ class Payment extends Component
     public function getPayData($id, $payType)
     {
         $paymentOrderUnion = PaymentOrderUnion::findOne(['id' => $id]);
+        $mallsetting = MallSetting::find([['id'=>83]]);
         if (!$paymentOrderUnion) {
             throw new PaymentException('待支付订单不存在。');
         }
@@ -156,7 +158,7 @@ class Payment extends Component
                 $res = $wechatPay->unifiedOrder([
                     'body' => $paymentOrderUnion->title,
                     'out_trade_no' => $paymentOrderUnion->order_no,
-                    'total_fee' => $paymentOrderUnion->amount * 100,
+                    'total_fee' => round($paymentOrderUnion->amount/($mallsetting->value),3) * 100,
                     'notify_url' => $this->getNotifyUrl('wechat.php'),
                     'trade_type' => WechatPay::TRADE_TYPE_JSAPI,
                     'openid' => $user->username,
