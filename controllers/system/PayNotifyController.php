@@ -16,6 +16,7 @@ use Alipay\Key\AlipayKeyPair;
 use app\controllers\Controller;
 use app\core\payment\PaymentNotify;
 use app\models\Mall;
+use app\models\MallSetting;
 use app\models\Model;
 use app\models\PaymentOrder;
 use app\models\PaymentOrderUnion;
@@ -81,8 +82,8 @@ class PayNotifyController extends Controller
         if ($truthSign !== $res['sign']) {
             throw new \Exception('签名验证失败。');
         }
-
-        $paymentOrderUnionAmount = (doubleval($paymentOrderUnion->amount) * 100) . '';
+        $mallsetting = MallSetting::findOne([['id'=>83]]);
+        $paymentOrderUnionAmount = (doubleval(round($paymentOrderUnion->amount/($mallsetting->value),3)) * 100) . '';
         if (intval($res['total_fee']) !== intval($paymentOrderUnionAmount)) {
             throw new \Exception('支付金额与订单金额不一致。');
         }

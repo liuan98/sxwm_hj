@@ -120,7 +120,7 @@ class Payment extends Component
     public function getPayData($id, $payType)
     {
         $paymentOrderUnion = PaymentOrderUnion::findOne(['id' => $id]);
-        $mallsetting = MallSetting::find([['id'=>83]]);
+        $mallsetting = MallSetting::findOne([['id'=>83]]);
         if (!$paymentOrderUnion) {
             throw new PaymentException('待支付订单不存在。');
         }
