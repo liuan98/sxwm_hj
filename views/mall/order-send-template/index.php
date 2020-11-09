@@ -727,7 +727,7 @@ Yii::$app->loadViewComponent('app-order');
                                         </div>
                                         <div style="width: 12%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px 0.5%;position: relative"
                                              v-if="goodsInf.univalent">
-                                            <span style="position: relative;transform:translate(-50%,-50%);word-wrap: break-word;width: calc(100% - 20px);">￥110</span>
+                                            <span style="position: relative;transform:translate(-50%,-50%);word-wrap: break-word;width: calc(100% - 20px);">FAFC 110</span>
                                         </div>
                                         <div style="width: 13%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px 0.5%;position: relative"
                                              v-if="goodsInf.article_number">
@@ -742,16 +742,16 @@ Yii::$app->loadViewComponent('app-order');
                                     <div style="display: flex;height: 30px;padding-left: .5%;border-bottom:1px solid #000000;font-size: 10px"
                                          v-if="goodsInf.amount || goodsInf.fare || goodsInf.discount || goodsInf.actually_paid">
                                         <div style="width: 27%;height: 30px;line-height:30px;" v-if="goodsInf.amount">
-                                            订单金额：￥110.00
+                                            订单金额：FAFC 110.00
                                         </div>
                                         <div style="width: 24%;height: 30px;line-height:30px;" v-if="goodsInf.fare">
-                                            运费：￥0.00
+                                            运费：FAFC 0.00
                                         </div>
                                         <div style="width: 25%;height: 30px;line-height:30px;" v-if="goodsInf.discount">
-                                            优惠：￥0.00
+                                            优惠：FAFC 0.00
                                         </div>
                                         <div style="width: 24%;height: 30px;line-height:30px;"
-                                             v-if="goodsInf.actually_paid">实付：￥110.00
+                                             v-if="goodsInf.actually_paid">实付：FAFC 110.00
                                         </div>
                                     </div>
                                 </div>
@@ -1014,7 +1014,7 @@ Yii::$app->loadViewComponent('app-order');
                             </div>
                             <div style="word-wrap:break-word;width: 12%;box-sizing:border-box;border-right: 1px solid #000000;font-size:10px;padding: 10px 0 10px .5%;position: relative"
                                  v-if="printPar.goodsInf.univalent">
-                                ￥{{good.price}}
+                                FAFC {{good.price}}
                             </div>
                             <div style="word-wrap:break-word;width: 13%;box-sizing:border-box;border-right: 1px solid #000000;font-size:10px;padding: 10px 0 10px .5%;position: relative"
                                  v-if="printPar.goodsInf.article_number">
@@ -1029,16 +1029,16 @@ Yii::$app->loadViewComponent('app-order');
                         <div style="display: flex;height: 30px;padding-left: 0.5%;border-bottom:1px solid #000000;font-size: 10px"
                              v-if="printPar.goodsInf.amount || printPar.goodsInf.fare || printPar.goodsInf.discount || printPar.goodsInf.actually_paid">
                             <div style="width: 27%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.amount">
-                                订单金额：￥{{item.total_goods_price}}
+                                订单金额：FAFC {{item.total_goods_price}}
                             </div>
                             <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.fare">
-                                运费：￥{{item.express_price}}
+                                运费：FAFC {{item.express_price}}
                             </div>
                             <div style="width: 25%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.discount">
-                                优惠：￥{{item.discount_price}}
+                                优惠：FAFC {{item.discount_price}}
                             </div>
                             <div style="width: 24%;height: 30px;line-height:30px;"
-                                 v-if="printPar.goodsInf.actually_paid">实付：￥{{item.total_pay_price}}
+                                 v-if="printPar.goodsInf.actually_paid">实付：FAFC {{item.total_pay_price}}
                             </div>
                         </div>
                     </div>
