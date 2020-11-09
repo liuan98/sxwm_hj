@@ -80,7 +80,7 @@ class PosterForm extends GrafikaOption
 
         if (isset($option['price']) && isset($mall_goods)) {
             $price = array_column($mall_goods->attr, 'price');
-            $price_str = $mall_goods->mallGoods['is_negotiable'] ? '价格面议' : (max($price) > min($price) ? '￥' . min($price) . '~' . max($price) : '￥' . min($price));
+            $price_str = $mall_goods->mallGoods['is_negotiable'] ? '价格面议' : (max($price) > min($price) ? 'FCFA' . min($price) . '~' . max($price) : 'FCFA' . min($price));
             $option['price']['text'] = $price_str;
         }
 

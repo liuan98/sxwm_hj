@@ -134,7 +134,7 @@ Yii::$app->loadViewComponent('app-order');
                     </div>
                     <!-- 退款金额 -->
                     <div class="app-order-info" :style="{'width': price}">
-                        <div>￥{{item.item.refund_price}}</div>
+                        <div>FCFA{{item.item.refund_price}}</div>
                     </div>
                 </template>
             </app-order>

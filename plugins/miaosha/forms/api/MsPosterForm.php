@@ -66,7 +66,7 @@ class MsPosterForm extends GrafikaOption
         if (isset($option['price'])) {
             $attr = $goods->goods->attr;
             $price = array_column($attr, 'price');
-            $price_str = max($price) > min($price) ? '￥' . min($price) . '~' . max($price) : '￥' . min($price);
+            $price_str = max($price) > min($price) ? 'FCFA' . min($price) . '~' . max($price) : 'FCFA' . min($price);
             $option['price']['text'] = $price_str;
         }
 

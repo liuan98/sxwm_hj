@@ -45,7 +45,7 @@
         border-right: 0;
         outline: 0;
     }
-    
+
     .input-item .el-input-group__append {
         background-color: #fff;
         border-left: 0;
@@ -199,13 +199,13 @@
                             </div>
                             <div style="width: 10%;border-left: 1px #e2e2e2 solid;">
                                 <div class="item-center">
-                                    <el-tooltip class="item" effect="dark" content="进行中" placement="top">    
+                                    <el-tooltip class="item" effect="dark" content="进行中" placement="top">
                                         <img src="statics/img/mall/ing.png" v-if="item.status == 0" alt="">
                                     </el-tooltip>
-                                    <el-tooltip class="item" effect="dark" content="成功" placement="top">    
+                                    <el-tooltip class="item" effect="dark" content="成功" placement="top">
                                         <img src="statics/img/mall/already.png" v-if="item.status == 1" alt="">
                                     </el-tooltip>
-                                    <el-tooltip class="item" effect="dark" content="失败" placement="top">    
+                                    <el-tooltip class="item" effect="dark" content="失败" placement="top">
                                         <img src="statics/img/plugins/gameover.png" v-if="item.status == 2" alt="">
                                     </el-tooltip>
                                 </div>
@@ -238,7 +238,7 @@
                     <div v-for="value in detail_list" class="detail-item">
                         <app-image style="margin-right: 20px;float: left;" :src="value.user.userInfo.avatar" width="60px" height="60px"></app-image>
                         <span class="detail-info" style="line-height: 1">{{value.user.nickname}}<br/>{{value.user.created_at}}</span>
-                        <div style="float: right">￥{{value.get_price}}</div>
+                        <div style="float: right">FCFA{{value.get_price}}</div>
                     </div>
                     <div @click="more" v-if="detail.length > 5 && clickMore" class="load-more">加载更多...</div>
                 </el-dialog>

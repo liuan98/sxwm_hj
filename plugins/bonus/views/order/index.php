@@ -58,7 +58,7 @@ Yii::$app->loadViewComponent('app-order');
                     </div>
                     <div>
                         <span>分红金额</span>
-                        <span style="color: #E7A75E;font-size: 16px">￥{{item.item.bonus_price}}</span>
+                        <span style="color: #E7A75E;font-size: 16px">FCFA{{item.item.bonus_price}}</span>
                     </div>
                 </div>
             </template>

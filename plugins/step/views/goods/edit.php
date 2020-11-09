@@ -48,7 +48,7 @@ Yii::$app->loadViewComponent('app-goods');
                                 <div>{{previewData.min_currency}}</div>
                                 <div class="end" v-if="previewData.max_currency > previewData.min_currency">起</div>
                                 <div class="end" style="padding:0 3px">+</div>
-                                <div class="end" style="margin-bottom: -2px;">￥</div>
+                                <div class="end" style="margin-bottom: -2px;">FCFA</div>
                                 <div>{{previewData.min_price}}</div>
                                 <div class="end" v-if="previewData.max_price > previewData.min_price">起</div>
                             </div>

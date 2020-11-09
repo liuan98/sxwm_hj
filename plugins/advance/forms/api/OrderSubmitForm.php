@@ -89,20 +89,20 @@ class OrderSubmitForm extends \app\forms\api\order\OrderSubmitForm
             if ($preferential_price > 0) {
                 $mchItem['insert_rows'][] = [
                     'title' => '活动优惠',
-                    'value' => '-￥' . $preferential_price
+                    'value' => '-FCFA' . $preferential_price
                 ];
             }
 //            $mchItem['insert_rows'][] = [
 //                'title' => '定金',
-//                'value' => '￥' . $deposit
+//                'value' => 'FCFA' . $deposit
 //            ];
 //            $mchItem['insert_rows'][] = [
 //                'title' => '膨胀金',
-//                'value' => '-￥' . $swell_deposit
+//                'value' => '-FCFA' . $swell_deposit
 //            ];
             $mchItem['insert_rows'][] = [
                 'title' => '定金抵扣',
-                'value' => '-￥' . $swell_deposit
+                'value' => '-FCFA' . $swell_deposit
             ];
             // $mchItem = $this->setOrderForm($mchItem);
             $mchItem = $this->setGoodsForm($mchItem);

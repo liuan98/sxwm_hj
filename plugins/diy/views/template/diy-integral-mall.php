@@ -162,7 +162,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                         <div flex="dir:top box:last">
                             <div flex="main:center cross:center">
                                 <div>
-                                    <span style="font-size: 24px;">￥</span><span
+                                    <span style="font-size: 24px;">FCFA</span><span
                                             style="font-size: 32px;">50.00</span>
                                 </div>
                             </div>
@@ -191,15 +191,15 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                             <div flex="box:last cross:bottom">
                                 <div class="goods-price" :style="cPriceStyle">
                                     <div>
-<!--                                         <template>￥{{item.price}}</template>
+<!--                                         <template>FCFA{{item.price}}</template>
                                         <template v-if="item.integral > 0">+</template> -->
                                         <template v-if="item.integral > 0">{{item.integral}}积分</template>
                                     </div>
                                     <div v-if="data.listStyle == -1" style="color: #909399;text-decoration: line-through;position: absolute;left: 0;bottom: 0;font-size: 24px;">
-                                        <span>￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.originalPrice}}</span>
                                     </div>
                                     <div v-else style="color: #909399;text-decoration: line-through;font-size: 24px;line-height: 1">
-                                        <span>￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.originalPrice}}</span>
                                     </div>
                                 </div>
                                 <div v-if="cShowBuyBtn" style="padding: 0 10px;">

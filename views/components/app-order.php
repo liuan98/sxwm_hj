@@ -577,7 +577,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                     </div>
                                     <div style="width: 250px" flex="dir:left box:mean">
                                         <div flex="cross:center main:center">
-                                            <span>小计：￥{{goods.total_original_price}}</span>
+                                            <span>小计：FCFA{{goods.total_original_price}}</span>
                                             <el-button type="text"
                                                        style="margin-left: 3px;"
                                                        v-if="isShowEditSinglePrice && item.is_pay == 0 && item.is_send == 0 && search.status != 5"
@@ -594,7 +594,7 @@ Yii::$app->loadViewComponent('order/app-city');
                         <div flex="cross:center" class="app-order-info" :style="{width:orderTitle[1].width}">
                             <div flex="dir:top">
                                 <div>
-                                    <span style="font-size: 16px">￥{{item.total_pay_price}}</span>
+                                    <span style="font-size: 16px">FCFA{{item.total_pay_price}}</span>
                                     <el-popover
                                             placement="bottom"
                                             width="250"
@@ -641,7 +641,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                 </div>
                                 <div class="express-price">
                             <span>
-                                <span style="color: #909399">(含运费￥{{item.express_price}})</span>
+                                <span style="color: #909399">(含运费FCFA{{item.express_price}})</span>
                                 <el-button type="text"
                                            v-if="isShowEditExpressPrice && item.is_pay == 0 && item.is_send == 0 && search.status != 5"
                                            circle
@@ -797,9 +797,9 @@ Yii::$app->loadViewComponent('order/app-city');
                         <template v-if="item.send_type == 1">
                             <div flex="cross:center">
                                 <el-tag style="margin-right: 10px;" size="small" hit type="warning">到店自提</el-tag>
-                                <span class="address-box" v-if="item.store">门店名称：{{item.store.name}} 电话：{{item.store.mobile}} 地址：{{item.store.address}} 
-                                <a v-if="item.store" :href="`https://bellavieci.com/web/mark.html?lat=`+item.store.latitude+`&lng=`+item.store.longitude" target="_blank"> <el-button type="text">地图上显示</el-button></a> 
-                                <a v-else :href="`https://bellavieci.com/web/mark.html?lat=`+getLocationFun(item.location)[1]+`&lng=`+getLocationFun(item.location)[0]" target="_blank"> <el-button type="text">地图上显示</el-button></a> 
+                                <span class="address-box" v-if="item.store">门店名称：{{item.store.name}} 电话：{{item.store.mobile}} 地址：{{item.store.address}}
+                                <a v-if="item.store" :href="`https://bellavieci.com/web/mark.html?lat=`+item.store.latitude+`&lng=`+item.store.longitude" target="_blank"> <el-button type="text">地图上显示</el-button></a>
+                                <a v-else :href="`https://bellavieci.com/web/mark.html?lat=`+getLocationFun(item.location)[1]+`&lng=`+getLocationFun(item.location)[0]" target="_blank"> <el-button type="text">地图上显示</el-button></a>
                                 </span>
                             </div>
                             <div style="margin: 10px 0;">收货人: {{item.name}} 电话：{{item.mobile}} </div>
@@ -807,8 +807,8 @@ Yii::$app->loadViewComponent('order/app-city');
                         <div v-else-if="(item.send_type == 0 || item.send_type == 2) && item.address">
                             <div flex="dir:left">
                                 <div class="address-box">收货人: {{item.name}} 电话：{{item.mobile}} 地址：{{item.address}}
-                               <a v-if="item.store" :href="`https://bellavieci.com/web/mark.html?lat=`+item.store.latitude+`&lng=`+item.store.longitude" target="_blank"><el-button type="text">地图上显示</el-button> </a> 
-                                <a v-else :href="`https://bellavieci.com/web/mark.html?lat=`+getLocationFun(item.location)[1]+`&lng=`+getLocationFun(item.location)[0]" target="_blank"> <el-button type="text">地图上显示</el-button></a> 
+                               <a v-if="item.store" :href="`https://bellavieci.com/web/mark.html?lat=`+item.store.latitude+`&lng=`+item.store.longitude" target="_blank"><el-button type="text">地图上显示</el-button> </a>
+                                <a v-else :href="`https://bellavieci.com/web/mark.html?lat=`+getLocationFun(item.location)[1]+`&lng=`+getLocationFun(item.location)[0]" target="_blank"> <el-button type="text">地图上显示</el-button></a>
                                 </div>
                                 <el-button
                                         v-if="isShowEditAddress == 1 && item.send_type != 2 && item.cancel_status == 0 && item.is_send==0"
@@ -1009,7 +1009,7 @@ Yii::$app->loadViewComponent('order/app-city');
                             </div>
                             <div style="word-wrap:break-word;box-sizing:border-box;width: 12%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px .5%;position: relative"
                                  v-if="printPar.goodsInf.univalent">
-                                ￥{{good.price}}
+                                FCFA{{good.price}}
                             </div>
                             <div style="word-wrap:break-word;box-sizing:border-box;width: 13%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px .5%;position: relative"
                                  v-if="printPar.goodsInf.article_number">
@@ -1024,16 +1024,16 @@ Yii::$app->loadViewComponent('order/app-city');
                         <div style="box-sizing:border-box;display: flex;height: 30px;padding-left: .5%;border-bottom:1px solid #000000;font-size: 10px"
                              v-if="printPar.goodsInf.amount || printPar.goodsInf.fare || printPar.goodsInf.discount || printPar.goodsInf.actually_paid">
                             <div style="width: 27%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.amount">
-                                订单金额：￥{{item.total_goods_price}}
+                                订单金额：FCFA{{item.total_goods_price}}
                             </div>
                             <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.fare">
-                                运费：￥{{item.express_price}}
+                                运费：FCFA{{item.express_price}}
                             </div>
                             <div style="width: 25%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.discount">
-                                优惠：￥{{item.discount_price}}
+                                优惠：FCFA{{item.discount_price}}
                             </div>
                             <div style="width: 24%;height: 30px;line-height:30px;"
-                                 v-if="printPar.goodsInf.actually_paid">实付：￥{{item.total_pay_price}}
+                                 v-if="printPar.goodsInf.actually_paid">实付：FCFA{{item.total_pay_price}}
                             </div>
                         </div>
                     </div>
@@ -1377,7 +1377,7 @@ Yii::$app->loadViewComponent('order/app-city');
             // 用户列表 用户订单数
                 this.search.keyword_1 = '4';
                 this.search.keyword = getQuery('user_id')
-            
+
             if (getQuery('clerk_id') > 0) {
                 this.search.clerk_id = getQuery('clerk_id');
             }

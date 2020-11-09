@@ -172,7 +172,7 @@ class CommonSetting extends Model
                 'top' => 554,
                 'left' => 15,
                 'color' => '#ff5c5c',
-                'text' => '最低￥10',
+                'text' => '最低FCFA10',
                 'file_type' => 'text',
             ],
         ];

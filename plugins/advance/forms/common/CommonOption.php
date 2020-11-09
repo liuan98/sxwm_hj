@@ -95,7 +95,7 @@ class CommonOption
                 'top' => 554,
                 'left' => 15,
                 'color' => '#ff5c5c',
-                'text' => '￥5',
+                'text' => 'FCFA5',
                 'file_type' => 'text',
             ],
         ];

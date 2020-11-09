@@ -722,7 +722,7 @@ Yii::$app->loadViewComponent('goods/app-goods-share');
                             <div v-if="activePage != 'enter'" class="mobile-foot">
                                 <div :class="activePage == 'bottom'? 'bottom-border': 'bottom-no-border'">
                                     <div class="mobile-foot-button" flex="dir:left">
-                                        <div :style="{'background-color': form.bottom_style_1, 'color': form.bottom_style_2}"><span>￥99</span>/有效期365天</div>
+                                        <div :style="{'background-color': form.bottom_style_1, 'color': form.bottom_style_2}"><span>FCFA99</span>/有效期365天</div>
                                         <div :style="{'background-color': form.bottom_btn_style_1,'color': form.bottom_btn_style_2}">立即开通</div>
                                     </div>
                                     <div class="bottom-read" flex="main:center cross:center">

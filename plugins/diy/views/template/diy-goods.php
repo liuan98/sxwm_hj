@@ -300,7 +300,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                                             </div>
                                             <div flex="box:last">
                                                 <div class="goods-price">
-                                                    <template v-if="data.showGoodsPrice">￥{{goods.price}}</template>
+                                                    <template v-if="data.showGoodsPrice">FCFA{{goods.price}}</template>
                                                 </div>
                                                 <div>
                                                     <template v-if="cShowBuyBtn">

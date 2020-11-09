@@ -75,7 +75,7 @@ class GoodsListForm extends Model
                 'cover_pic' => $goods['goodsWarehouse']['cover_pic'],
                 'goods_id' => $goods['id'],
                 'price' => $goods['price'],
-                'price_str' => $goods['price'] > 0 ? "￥" . $goods['price'] : '免费预约',
+                'price_str' => $goods['price'] > 0 ? "FCFA" . $goods['price'] : '免费预约',
                 'is_level' => $goods['is_level'],
                 'level_price' => CommonGoodsMember::getCommon()->getGoodsMemberPrice($goods),
                 'video_url' => Video::getUrl($goods['goodsWarehouse']['video_url']),

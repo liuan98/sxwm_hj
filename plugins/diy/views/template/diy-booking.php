@@ -156,7 +156,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                             <div flex="box:last cross:bottom">
                                 <div class="goods-price" :style="cPriceStyle">
                                     <template v-if="item.price=='0.00' || item.price==0">免费</template>
-                                    <template v-else>￥{{item.price}}</template>
+                                    <template v-else>FCFA{{item.price}}</template>
                                 </div>
                                 <div v-if="cShowBuyBtn" style="padding: 0 10px;">
                                     <el-button v-if="data.buyBtnStyle===1" class="buy-btn"

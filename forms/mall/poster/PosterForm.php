@@ -285,7 +285,7 @@ class PosterForm extends Model
                     'left' => 124,
                     'color' => '#FF4544',
                     'file_type' => 'text',
-                    'text' => '￥',
+                    'text' => 'FCFA',
 //                    'font_path' => \Yii::$app->basePath . '/web/statics/font/hanyicuyuanti.ttf',
                 ],
                 'text_6' => [
@@ -325,7 +325,7 @@ class PosterForm extends Model
                     'left' => 124,
                     'color' => '#FF4544',
                     'file_type' => 'text',
-                    'text' => '￥',
+                    'text' => 'FCFA',
 //                    'font_path' => \Yii::$app->basePath . '/web/statics/font/hanyicuyuanti.ttf',
                 ],
                 'text_9' => [

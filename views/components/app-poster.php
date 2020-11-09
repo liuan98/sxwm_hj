@@ -176,7 +176,7 @@
                                                     left: rule_form.price.left + 'px',
                                                     fontSize: rule_form.price.font * 2 + 'px',
                                                     color: rule_form.price.color}">
-                                        {{rule_form.price.text ? rule_form.price.text : '￥99.00'}}
+                                        {{rule_form.price.text ? rule_form.price.text : 'FCFA99.00'}}
                     </span>
                     <span v-if="rule_form.desc && rule_form.desc.is_show == 1"
                           v-html="rule_form.desc.text"

@@ -66,7 +66,7 @@ class PosterForm extends GrafikaOption
 
         isset($option['pic']) && $option['pic']['file_path'] = $goods->goods->goodsWarehouse->cover_pic;
         isset($option['nickname']) && $option['nickname']['text'] = \Yii::$app->user->identity->nickname;
-        isset($option['price']) && $option['price']['text'] = sprintf('%s积分+￥%s', $goods->integral_num, $goods->goods->price);
+        isset($option['price']) && $option['price']['text'] = sprintf('%s积分+FCFA%s', $goods->integral_num, $goods->goods->price);
         isset($option['name']) && $option['name']['text'] = self::autowrap($option['name']['font'], 0, $this->font_path, $goods->goods->goodsWarehouse->name, 750 - $option['name']['left'], 2);
         isset($option['desc']) && $option['desc']['text'] = self::autowrap($option['desc']['font'], 0, $this->font_path, $option['desc']['text'], $option['desc']['width']);
 

@@ -44,7 +44,7 @@ class CashForm extends Model
         $minPrice = round($this->setting[BonusSetting::MIN_MONEY], 2);
         return [
             [['price', 'type'], 'required'],
-            [['price'], 'number', 'min' => $minPrice ,'tooSmall' => '{attribute}不能少于￥{min}'],
+            [['price'], 'number', 'min' => $minPrice ,'tooSmall' => '{attribute}不能少于FCFA{min}'],
             [['type', 'name', 'mobile', 'bank_name'], 'trim'],
             [['type', 'name', 'mobile', 'bank_name'], 'string'],
             [['type'], function ($attr, $params) {

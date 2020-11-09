@@ -112,7 +112,7 @@
                 <el-table-column label="订单数" prop="order_num"></el-table-column>
                 <el-table-column label="分红金额" prop="price" width="350">
                     <template slot-scope="scope">
-                        <div>￥{{scope.row.bonus_price}}({{scope.row.bonus_rate}}%分红比例)</div>
+                        <div>FCFA{{scope.row.bonus_price}}({{scope.row.bonus_rate}}%分红比例)</div>
                     </template>
                 </el-table-column>
                 <el-table-column label="股东数" prop="stock_num"></el-table-column>
@@ -224,7 +224,7 @@
                 this.loading = true;
                 this.loadData(page);
             },
-            chooseYear(e) {      
+            chooseYear(e) {
                 this.choose = e;
                 if(e != null && !(this.week != '' && this.week != null && this.month == null)) {
                     this.loadData();

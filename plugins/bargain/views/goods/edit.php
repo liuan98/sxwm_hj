@@ -174,10 +174,10 @@ Yii::$app->loadViewComponent('app-goods');
                                 <div flex="dir:left" style="margin-top:16px">
                                     <div flex="dir:left">
                                         <div>最低</div>
-                                        <div style="color:#ff4544">￥</div>
+                                        <div style="color:#ff4544">FCFA</div>
                                         <div style="color:#ff4544;font-size:18px;line-height:10px">{{form.min_price}}</div>
                                     </div>
-                                    <div style="margin-left: 6px;text-decoration: line-through;">原价￥{{previewData.original_price}}</div>
+                                    <div style="margin-left: 6px;text-decoration: line-through;">原价FCFA{{previewData.original_price}}</div>
                                 </div>
                                 <div flex="dir:left" style="margin-top:10px">
                                     <div>库存:{{form.stock}}</div>

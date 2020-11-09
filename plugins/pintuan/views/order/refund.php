@@ -34,7 +34,7 @@ Yii::$app->loadViewComponent('app-order');
         border: 1px solid #dcdfe6;
         outline: 0;
     }
-    
+
     .input-item .el-input-group__append {
         background-color: #fff;
         border-left: 0;
@@ -133,7 +133,7 @@ Yii::$app->loadViewComponent('app-order');
                     </div>
                     <!-- 退款金额 -->
                     <div class="app-order-info" :style="{'width': price}">
-                        <div>￥{{item.item.refund_price}}</div>
+                        <div>FCFA{{item.item.refund_price}}</div>
                     </div>
                 </template>
             </app-order>
@@ -206,7 +206,7 @@ Yii::$app->loadViewComponent('app-order');
                     this.pagination = e.pagination;
                     this.address = e.address;
                     this.export_list = e.export_list;
-                });                
+                });
             },
             // 分页
             pageChange(page) {
@@ -254,7 +254,7 @@ Yii::$app->loadViewComponent('app-order');
                 }).then(e => {
                     this.loading = false;
                     if (e.data.code == 0) {
-                        this.list = e.data.data.list;                       
+                        this.list = e.data.data.list;
                         let detail = [];
                         for(let i = 0;i < this.list.length;i++) {
                             this.list[i].detail = [this.list[i].detail]

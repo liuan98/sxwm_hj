@@ -502,7 +502,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                     </div>
                                     <div class="item-box share-price" flex="dir:left cross:center">
                                         <span class="label orange-label">佣金:</span>
-                                        <div>￥{{shareItem.first_price}}</div>
+                                        <div>FCFA{{shareItem.first_price}}</div>
                                     </div>
                                 </template>
                                 <template v-if="shareItem.second_parent">
@@ -519,7 +519,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                     </div>
                                     <div class="item-box share-price" flex="dir:left cross:center">
                                         <span class="label orange-label">佣金:</span>
-                                        <div>￥{{shareItem.second_price}}</div>
+                                        <div>FCFA{{shareItem.second_price}}</div>
                                     </div>
                                 </template>
                                 <template v-if="shareItem.third_parent">
@@ -536,7 +536,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                     </div>
                                     <div class="item-box share-price" flex="dir:left cross:center">
                                         <span class="label orange-label">佣金:</span>
-                                        <div>￥{{shareItem.third_price}}</div>
+                                        <div>FCFA{{shareItem.third_price}}</div>
                                     </div>
                                 </template>
                             </div>
@@ -569,63 +569,63 @@ Yii::$app->loadViewComponent('order/app-city');
                         </el-table-column>
                         <el-table-column align="center" prop="unit_price" label="单价" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.unit_price}}
+                                FCFA{{scope.row.unit_price}}
                             </template>
                         </el-table-column>
                         <el-table-column align="center" prop="num" label="数量" width="80"></el-table-column>
                         <el-table-column align="center" prop="total_original_price" label="原价" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.goods_info.goods_attr.original_price}}
+                                FCFA{{scope.row.goods_info.goods_attr.original_price}}
                             </template>
                         </el-table-column>
                         <el-table-column align="center" prop="total_price" label="折扣后" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.total_price}}
+                                FCFA{{scope.row.total_price}}
                             </template>
                         </el-table-column>
                     </el-table>
                     <el-form label-width="200px" :model="order" class="app-order-count-price">
                         <el-form-item label="商品小计">
-                            <span>￥{{ order.total_goods_original_price }}</span>
+                            <span>FCFA{{ order.total_goods_original_price }}</span>
                         </el-form-item>
                         <el-form-item label="运费">
-                            <span>￥{{ order.express_original_price }}</span>
+                            <span>FCFA{{ order.express_original_price }}</span>
                         </el-form-item>
                         <el-form-item label="会员折扣" v-if="order.member_discount_price != 0.00">
-                            <span style="color:#ff4544;">-￥{{ order.member_discount_price }}</span>
+                            <span style="color:#ff4544;">-FCFA{{ order.member_discount_price }}</span>
                         </el-form-item>
                         <el-form-item label="积分抵扣" v-if="order.integral_deduction_price != 0.00">
-                            <span style="color:#ff4544;">-￥{{ order.integral_deduction_price }}</span>
+                            <span style="color:#ff4544;">-FCFA{{ order.integral_deduction_price }}</span>
                         </el-form-item>
                         <el-form-item label="优惠券抵扣" v-if="order.coupon_discount_price != 0.00">
-                            <span style="color:#ff4544;">-￥{{ order.coupon_discount_price }}</span>
+                            <span style="color:#ff4544;">-FCFA{{ order.coupon_discount_price }}</span>
                         </el-form-item>
                         <!--插件特殊优惠-->
                         <template v-if="order.plugin_data" v-for="pluginData in order.plugin_data">
                             <el-form-item :label="pluginData.label">
-                                <span style="color:#ff4544;">-￥{{pluginData.value}}</span>
+                                <span style="color:#ff4544;">-FCFA{{pluginData.value}}</span>
                             </el-form-item>
                         </template>
                         <!--                        <el-form-item label="商品优惠"-->
                         <!--                                      v-if="(order.total_goods_original_price - order.total_goods_price) > 0">-->
-                        <!--                            <span style="color:#ff4544;">￥{{ (order.total_goods_original_price - order.total_goods_price).toFixed(2) }}</span>-->
+                        <!--                            <span style="color:#ff4544;">FCFA{{ (order.total_goods_original_price - order.total_goods_price).toFixed(2) }}</span>-->
                         <!--                        </el-form-item>-->
                         <el-form-item label="商品加价"
                                       v-if="(order.total_goods_original_price - order.total_goods_price) < 0">
-                            <span style="color:#ff4544;">￥{{ (order.total_goods_price - order.total_goods_original_price).toFixed(2) }}</span>
+                            <span style="color:#ff4544;">FCFA{{ (order.total_goods_price - order.total_goods_original_price).toFixed(2) }}</span>
                         </el-form-item>
                         <el-form-item label="运费减免" v-if="(order.express_original_price - order.express_price) > 0">
-                            <span style="color:#ff4544;">￥{{ (order.express_original_price - order.express_price).toFixed(2) }}</span>
+                            <span style="color:#ff4544;">FCFA{{ (order.express_original_price - order.express_price).toFixed(2) }}</span>
                         </el-form-item>
                         <el-form-item label="运费增加" v-if="(order.express_original_price - order.express_price) < 0">
-                            <span style="color:#ff4544;">￥{{ (order.express_price - order.express_original_price).toFixed(2) }}</span>
+                            <span style="color:#ff4544;">FCFA{{ (order.express_price - order.express_original_price).toFixed(2) }}</span>
                         </el-form-item>
                         <el-form-item label="订单改价" v-if="order.back_price != 0.00">
-                            <span v-if="order.back_price > 0.00" style="color:#ff4544;">-￥{{ order.back_price }}</span>
-                            <span v-if="order.back_price < 0.00" style="color:#ff4544;">￥{{ -order.back_price }}</span>
+                            <span v-if="order.back_price > 0.00" style="color:#ff4544;">-FCFA{{ order.back_price }}</span>
+                            <span v-if="order.back_price < 0.00" style="color:#ff4544;">FCFA{{ -order.back_price }}</span>
                         </el-form-item>
                         <el-form-item label="实付款">
-                            <span style="color:#ff4544;">￥<b>{{ order.total_pay_price }}</b></span>
+                            <span style="color:#ff4544;">FCFA<b>{{ order.total_pay_price }}</b></span>
                         </el-form-item>
                     </el-form>
                 </el-card>
@@ -747,7 +747,7 @@ Yii::$app->loadViewComponent('order/app-city');
                                 {{good.num}}
                             </div>
                             <div style="word-wrap:break-word;box-sizing:border-box;width: 12%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px 0.5%;position: relative" v-if="printPar.goodsInf.univalent">
-                                ￥{{good.price}}
+                                FCFA{{good.price}}
                             </div>
                             <div style="word-wrap:break-word;box-sizing:border-box;width: 13%;border-right: 1px solid #000000;font-size:10px;padding: 10px 10px 10px 0.5%;position: relative" v-if="printPar.goodsInf.article_number">
                                 56
@@ -758,10 +758,10 @@ Yii::$app->loadViewComponent('order/app-city');
                         </div>
 
                         <div style="box-sizing:border-box;display: flex;height: 30px;padding-left: 0.5%;border-bottom:1px solid #000000;font-size: 10px" v-if="printPar.goodsInf.amount || printPar.goodsInf.fare || printPar.goodsInf.discount || printPar.goodsInf.actually_paid">
-                            <div style="width: 27%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.amount">订单金额：￥{{item.total_goods_price}}</div>
-                            <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.fare">运费：￥{{item.express_price}}</div>
-                            <div style="width: 25%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.discount">优惠：￥{{item.discount_price}}</div>
-                            <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.actually_paid">实付：￥{{item.total_pay_price}}</div>
+                            <div style="width: 27%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.amount">订单金额：FCFA{{item.total_goods_price}}</div>
+                            <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.fare">运费：FCFA{{item.express_price}}</div>
+                            <div style="width: 25%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.discount">优惠：FCFA{{item.discount_price}}</div>
+                            <div style="width: 24%;height: 30px;line-height:30px;" v-if="printPar.goodsInf.actually_paid">实付：FCFA{{item.total_pay_price}}</div>
                         </div>
                     </div>
                     <div :style="{boxSizing: 'border-box', display:'flex',borderBottom:'1px solid #000000'}" v-if="printPar.sellerInf.branch || printPar.sellerInf.name || printPar.sellerInf.phone || printPar.sellerInf.postcode || printPar.sellerInf.address || printPar.sellerInf.remark">

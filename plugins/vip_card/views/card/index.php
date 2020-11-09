@@ -121,7 +121,7 @@ $iconBaseUrl = \app\helpers\PluginHelper::getPluginBaseAssetsUrl('vip_card') . '
                 <div class="card-right">
                     <div class="right-label" flex="main:justify">
                         <div>会员卡权益</div>
-                        <div>  
+                        <div>
                             <el-button style="padding: 9px 24px;margin-left: 25px" type="primary" size="small" @click="edit">编辑</el-button>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ $iconBaseUrl = \app\helpers\PluginHelper::getPluginBaseAssetsUrl('vip_card') . '
                         label="价格"
                         width="150">
                     <template slot-scope="scope">
-                        <div>￥{{scope.row.price}}</div>
+                        <div>FCFA{{scope.row.price}}</div>
                     </template>
                 </el-table-column>
 

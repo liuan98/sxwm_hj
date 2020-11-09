@@ -574,23 +574,23 @@
                             <div class="content" style="font-size:13pt">
                                 <div>
                                     <div flex="dir:top main:center" style="border-top:1px solid #e2e2e2;color:#353535;padding:0 8px;height:80px;background:#FFFFFF">
-                                        <div style="font-size:15pt;margin-bottom:8px">账户剩余金额：￥13</div>
+                                        <div style="font-size:15pt;margin-bottom:8px">账户剩余金额：FCFA13</div>
                                         <div flex="dir:left cross:center" style="color:#999999">
-                                            <div>今日剩余提现金额: ￥1000</div>
+                                            <div>今日剩余提现金额: FCFA1000</div>
                                             <div style="font-size:11pt;border-radius:17px;padding:1px 5px;border:1px solid #999999;margin-left:8px">
                                                 规则
                                             </div>
                                         </div>
                                     </div>
                                     <div flex="dir:left cross:center" style="background:#FFFFFF;color:#666;height:80px;padding:0 12px;font-size:13pt;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2">
-                                        <div style="color:#ff4544;font-size:30pt">￥</div>
+                                        <div style="color:#ff4544;font-size:30pt">FCFA</div>
                                         <div style="padding-left:20px;color: #cdcdcd;font-size:19pt">
                                             请输入{{words.cash_money.name}}
                                         </div>
                                     </div>
                                     <div style="padding:10px 12px;color:#666;font-size:12pt" flex="dir:top main:center">
-                                        <div>说明： {{words.cash_money.name}}必须不能大于￥80</div>
-                                        <!--<div>{{words.cash_money.name}}不能大于￥80</div>-->
+                                        <div>说明： {{words.cash_money.name}}必须不能大于FCFA80</div>
+                                        <!--<div>{{words.cash_money.name}}不能大于FCFA80</div>-->
                                         <!--<div>{{words.cash.name}}需要加收100%的手续费</div>-->
                                     </div>
                                     <div v-text="words.cash_type.name" style="background:#FFFFFF;padding:16px 12px"></div>

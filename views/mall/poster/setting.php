@@ -341,7 +341,7 @@
                                                 left: ruleForm.goods.price.left + 'px',
                                                 fontSize: ruleForm.goods.price.font * 2 + 'px',
                                                 color: ruleForm.goods.price.color}">
-                                        ￥99.00
+                                        FCFA99.00
                                 </span>
                                 <span v-if="ruleForm.goods.desc.is_show == 1"
                                       :style="{

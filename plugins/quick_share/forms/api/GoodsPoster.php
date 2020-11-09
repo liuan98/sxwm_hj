@@ -139,7 +139,7 @@ class GoodsPoster extends GrafikaOption
         }
 
         if (isset($option['original_price']) && isset($option['price'])) {
-            $option['original_price']['text'] = '￥' . $goods->goodsWarehouse->original_price;
+            $option['original_price']['text'] = 'FCFA' . $goods->goodsWarehouse->original_price;
             $text = imagettfbbox($option['price']['font'], 0, $this->font_path, $option['price']['text']);
             $option['original_price']['left'] = $text[2] - $text[0] + $option['original_price']['left'] + $option['price']['left'] - 8;
 

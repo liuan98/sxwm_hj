@@ -96,7 +96,7 @@ class CommonOption
                 'top' => 554,
                 'left' => 15,
                 'color' => '#ff5c5c',
-                'text' => '20积分+￥5',
+                'text' => '20积分+FCFA5',
                 'file_type' => 'text',
             ],
         ];

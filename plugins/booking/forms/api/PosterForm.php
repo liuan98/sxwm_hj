@@ -63,7 +63,7 @@ class PosterForm extends GrafikaOption
         if (isset($option['price'])) {
             $price = array_column($goods->goods->attr, 'price');
             $price_str = max($price) > min($price) ? min($price) . '~' . max($price) : min($price);
-            $option['price']['text'] = sprintf('￥%s', $price_str);
+            $option['price']['text'] = sprintf('FCFA%s', $price_str);
 
             if($price_str == 0) {
                 $option['price']['file_path'] = \Yii::$app->basePath . '/web/statics/img/mall/poster/free.png';

@@ -45,14 +45,14 @@ $mallUrl = Yii::$app->request->hostInfo
             <div class="diy-coupon" flex="dir:left" :style="cListStyle">
                 <div class="diy-coupon-one" flex="dir:left" :style="cStyle1" v-for="item in 2">
                     <div style="text-align: center;width: 215px">
-                        <div style="height: 80px;line-height: 80px;font-size: 28px">￥1000</div>
+                        <div style="height: 80px;line-height: 80px;font-size: 28px">FCFA1000</div>
                         <div style="height: 50px;line-height: 50px;font-size: 24px">满200元可用</div>
                     </div>
                     <div class="right" flex="main:center cross:center">立即领取</div>
                 </div>
                 <div class="diy-coupon-one" flex="dir:left" :style="cStyle2" v-for="item in 2">
                     <div style="text-align: center;width: 215px">
-                        <div style="height: 80px;line-height: 80px;font-size: 28px">￥1000</div>
+                        <div style="height: 80px;line-height: 80px;font-size: 28px">FCFA1000</div>
                         <div style="height: 50px;line-height: 50px;font-size: 24px">满200元可用</div>
                     </div>
                     <div class="right" flex="main:center cross:center">已领取</div>

@@ -246,7 +246,7 @@ Yii::$app->loadViewComponent('app-goods');
                                     </div>
                                 </div>
                                 <div style="font-size:12px;text-decoration: line-through;padding-top:8px">
-                                    ￥{{previewData.original_price}}
+                                    FCFA{{previewData.original_price}}
                                 </div>
                                 <div style="color:#ff4544;padding-top:8px;font-size:13px;">{{previewData.title_a}}</div>
                                 <div style="padding-top:6px;font-size:11px">{{previewData.title_b}}</div>
@@ -437,11 +437,11 @@ Yii::$app->loadViewComponent('app-goods');
                         let max_info = Math.max.apply(null, info);
                         let min_info = Math.min.apply(null, info);
                         if (max_info > max_info) {
-                            return '￥' + min_info + '-' + max_info;
+                            return 'FCFA' + min_info + '-' + max_info;
                         } else if (isNaN(min_info) || isFinite(min_info)) {
                             return ''
                         } else {
-                            return '￥' + min_info;
+                            return 'FCFA' + min_info;
                         }
                     }
 

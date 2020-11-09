@@ -44,7 +44,7 @@
         border-right: 0;
         outline: 0;
     }
-    
+
     .input-item .el-input-group__append {
         background-color: #fff;
         border-left: 0;
@@ -213,19 +213,19 @@
                                             <el-tooltip class="item" effect="dark" content="售价" placement="top">
                                                 <img src="statics/img/plugins/price.png" alt="">
                                             </el-tooltip>
-                                            <span>￥{{item.price}}</span>
+                                            <span>FCFA{{item.price}}</span>
                                         </div>
                                         <div>
                                             <el-tooltip class="item" effect="dark" content="最低价" placement="top">
                                                 <img src="statics/img/plugins/low.png" alt="">
                                             </el-tooltip>
-                                            <span>￥{{item.min_price}}</span>
+                                            <span>FCFA{{item.min_price}}</span>
                                         </div>
                                         <div>
                                             <el-tooltip class="item" effect="dark" content="当前价" placement="top">
                                                 <img src="statics/img/plugins/now.png" alt="">
                                             </el-tooltip>
-                                            <span>￥{{item.now_price}}</span>
+                                            <span>FCFA{{item.now_price}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -236,13 +236,13 @@
                         </div>
                         <div style="width: 10%;border-left: 1px #e2e2e2 solid;">
                             <div class="item-center">
-                                <el-tooltip class="item" effect="dark" content="进行中" placement="top">    
+                                <el-tooltip class="item" effect="dark" content="进行中" placement="top">
                                     <img src="statics/img/mall/ing.png" v-if="item.status == 0" alt="">
                                 </el-tooltip>
-                                <el-tooltip class="item" effect="dark" content="成功" placement="top">    
+                                <el-tooltip class="item" effect="dark" content="成功" placement="top">
                                     <img src="statics/img/mall/already.png" v-if="item.status == 1" alt="">
                                 </el-tooltip>
-                                <el-tooltip class="item" effect="dark" content="失败" placement="top">    
+                                <el-tooltip class="item" effect="dark" content="失败" placement="top">
                                     <img src="statics/img/plugins/gameover.png" v-if="item.status == 2" alt="">
                                 </el-tooltip>
                             </div>
@@ -278,7 +278,7 @@
                 <div v-for="value in detail_list" class="detail-item">
                     <app-image style="margin-right: 20px;float: left;" :src="value.avatar" width="60px" height="60px"></app-image>
                     <span>{{value.nickname}}</span>
-                    <div style="float: right">砍了￥{{value.price}}</div>
+                    <div style="float: right">砍了FCFA{{value.price}}</div>
                 </div>
                 <div @click="more" v-if="detail.length > 5 && clickMore" class="load-more">加载更多...</div>
             </el-dialog>

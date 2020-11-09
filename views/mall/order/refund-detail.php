@@ -147,17 +147,17 @@ Yii::$app->loadViewComponent('refund/app-agree-refund');
                                 <span class="label" flex-box="0">实付金额:</span>
                                 <div flex-box="1">
                                     {{ order.order.total_pay_price }}
-                                    <span v-if="order.order.express_price > 0" style="color: #999999;">(含运费￥{{order.order.express_price}})</span>
+                                    <span v-if="order.order.express_price > 0" style="color: #999999;">(含运费FCFA{{order.order.express_price}})</span>
                                 </div>
                             </div>
                             <template v-if="order.type == 1">
                                 <div class="item-box" flex="dir:left cross:center">
                                     <span class="label" flex-box="0">申请退款:</span>
-                                    <div flex-box="1">￥{{ order.refund_price }}</div>
+                                    <div flex-box="1">FCFA{{ order.refund_price }}</div>
                                 </div>
                                 <div v-if="order.is_refund == 1" class="item-box" flex="dir:left cross:center">
                                     <span class="label" flex-box="0">实际退款:</span>
-                                    <div flex-box="1">￥{{ order.reality_refund_price }}</div>
+                                    <div flex-box="1">FCFA{{ order.reality_refund_price }}</div>
                                 </div>
                             </template>
                             <div class="item-box" flex="dir:left cross:center">
@@ -283,30 +283,30 @@ Yii::$app->loadViewComponent('refund/app-agree-refund');
                         </el-table-column>
                         <el-table-column align="center" prop="unit_price" label="小计" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.goods_info.goods_attr.price}}
+                                FCFA{{scope.row.goods_info.goods_attr.price}}
                             </template>
                         </el-table-column>
                         <el-table-column align="center" prop="num" label="数量" width="80"></el-table-column>
                         <el-table-column align="center" prop="total_original_price" label="原价" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.goods_info.goods_attr.original_price}}
+                                FCFA{{scope.row.goods_info.goods_attr.original_price}}
                             </template>
                         </el-table-column>
                         <el-table-column align="center" prop="total_price" label="折扣后" width="120">
                             <template slot-scope="scope">
-                                ￥{{scope.row.total_price}}
+                                FCFA{{scope.row.total_price}}
                             </template>
                         </el-table-column>
                     </el-table>
                     <el-form label-width="100px" :model="order" class="app-order-count-price">
                         <el-form-item label="商品小计">
-                            <span>￥{{ order.order.total_goods_original_price }}</span>
+                            <span>FCFA{{ order.order.total_goods_original_price }}</span>
                         </el-form-item>
                         <el-form-item label="运费">
-                            <span>￥{{ order.order.express_original_price }}</span>
+                            <span>FCFA{{ order.order.express_original_price }}</span>
                         </el-form-item>
                         <el-form-item label="实付款">
-                            <span style="color:#ff4544;">￥<b>{{ order.order.total_pay_price }}</b></span>
+                            <span style="color:#ff4544;">FCFA<b>{{ order.order.total_pay_price }}</b></span>
                         </el-form-item>
                     </el-form>
                 </el-card>

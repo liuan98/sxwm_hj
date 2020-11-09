@@ -67,7 +67,7 @@ class PosterForm extends GrafikaOption implements BasePoster
 
         if (isset($option['price'])) {
             $price = array_column($goods->attr, 'price');
-            $price_str = $goods->mallGoods['is_negotiable'] ? '价格面议' : (max($price) > min($price) ? '￥' . min($price) . '~' . max($price) : '￥' . min($price));
+            $price_str = $goods->mallGoods['is_negotiable'] ? '价格面议' : (max($price) > min($price) ? 'FCFA' . min($price) . '~' . max($price) : 'FCFA' . min($price));
             $option['price']['text'] = $price_str;
         }
 

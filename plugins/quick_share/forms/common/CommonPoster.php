@@ -101,7 +101,7 @@ class CommonPoster
                 'font' => 20,
                 'top' => 97,
                 'left' => 24,
-                'text' => '￥',
+                'text' => 'FCFA',
                 'color' => '#ff4544',
                 'file_type' => 'text',
             ],

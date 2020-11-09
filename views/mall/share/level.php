@@ -113,13 +113,13 @@
                             <div  flex="dir:left cross:center" v-if="scope.row.condition_type == 2">
                                 <el-tag>{{condition_type_list[scope.row.condition_type]}}</el-tag>
                                 <div style="margin-left: 5px;">
-                                    <app-ellipsis :line="1">达到￥{{scope.row.condition}}</app-ellipsis>
+                                    <app-ellipsis :line="1">达到FCFA{{scope.row.condition}}</app-ellipsis>
                                 </div>
                             </div>
                             <div fl flex="dir:left cross:center"ex v-if="scope.row.condition_type == 3">
                                 <el-tag>{{condition_type_list[scope.row.condition_type]}}</el-tag>
                                 <div style="margin-left: 5px;">
-                                    <app-ellipsis :line="1">达到￥{{scope.row.condition}}</app-ellipsis>
+                                    <app-ellipsis :line="1">达到FCFA{{scope.row.condition}}</app-ellipsis>
                                 </div>
                             </div>
                         </template>

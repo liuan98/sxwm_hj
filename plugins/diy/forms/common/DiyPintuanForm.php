@@ -56,7 +56,7 @@ class DiyPintuanForm extends Model
                 if ($item->groups) {
                     $arr['people_num'] = $item->groups[0]['people_num'];
                     $arr['pintuan_price'] = $item->groups[0]['attr'][0]['pintuan_price'];
-                    $arr['price_content'] = '￥' . $item->groups[0]['attr'][0]['pintuan_price'];
+                    $arr['price_content'] = 'FCFA' . $item->groups[0]['attr'][0]['pintuan_price'];
                 }
                 $newList[] = $arr;
             }

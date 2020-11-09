@@ -69,7 +69,7 @@ class PosterForm extends GrafikaOption
 
         if (isset($option['price'])) {
             $current_name = $setting['currency_name'];
-            $option['price']['text'] = $goods->currency . $current_name . '+￥'.$goods->goods->price;
+            $option['price']['text'] = $goods->currency . $current_name . '+FCFA'.$goods->goods->price;
         }
         isset($option['name']) && $option['name']['text'] = self::autowrap($option['name']['font'], 0, $this->font_path, $goods->goods->goodsWarehouse->name, 750 - $option['name']['left'], 2);
         isset($option['desc']) && $option['desc']['text'] = self::autowrap($option['desc']['font'], 0, $this->font_path, $option['desc']['text'], $option['desc']['width']);

@@ -640,7 +640,7 @@ Yii::$app->loadViewComponent('app-rich-text');
                                 <div class="title-txt">{{form.form.orders?form.form.orders:'分红订单'}}</div>
                                 <div class="price-text">
                                     <div v-for="item in [1,2,3,4,5]">{{form.form.price_text ? form.form.price_text : '分红金额'}}
-                                        <span style="color: #ff4544;font-size: 14px;">￥0.48</span>
+                                        <span style="color: #ff4544;font-size: 14px;">FCFA0.48</span>
                                     </div>
                                 </div>
                             </div>
@@ -654,7 +654,7 @@ Yii::$app->loadViewComponent('app-rich-text');
                                 <div class="offer-text">
                                     <div v-for="item in [1,2,3,4,5,6,7]">
                                         <span style="display: inline-block;height: 18px;padding: 0 5px;text-align: center;line-height: 18px;background-color: #efeff4">{{form.form.offer_text ? form.form.offer_text : '贡献分红金额'}}</span>
-                                        <span style="color: #666;font-size: 12px;">￥0.00</span>
+                                        <span style="color: #666;font-size: 12px;">FCFA0.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -666,8 +666,8 @@ Yii::$app->loadViewComponent('app-rich-text');
                                 <div v-if="form.become_type == 2" class="become-txt">还差<span style="font-size: 19px;color: #ff8f17">XXX</span>{{form.form.become_name?form.form.become_name:'已提现佣金'}}成为队长</div>
                                 <div v-if="form.become_type == 3" class="become-about">已有{{form.form.become_name?form.form.become_name:'下线'}}XXX人</div>
                                 <div v-if="form.become_type == 4" class="become-about">已有{{form.form.become_name?form.form.become_name:'下线分销商'}}XXX人</div>
-                                <div v-if="form.become_type == 1" class="become-about">已有{{form.form.become_name?form.form.become_name:'累计佣金'}}￥XXX</div>
-                                <div v-if="form.become_type == 2" class="become-about">已有{{form.form.become_name?form.form.become_name:'已提现佣金'}}￥XXX</div>
+                                <div v-if="form.become_type == 1" class="become-about">已有{{form.form.become_name?form.form.become_name:'累计佣金'}}FCFAXXX</div>
+                                <div v-if="form.become_type == 2" class="become-about">已有{{form.form.become_name?form.form.become_name:'已提现佣金'}}FCFAXXX</div>
                             </div>
                             <div class="item-img" style="border: 0;width: 570px;margin-left: 20px;">
                                 <div style="height: 32px;margin-left: 40px;margin-bottom: 20px" flex="dir:left cross:center" v-if="active_setting == 1">
@@ -750,7 +750,7 @@ Yii::$app->loadViewComponent('app-rich-text');
             <el-button class="button-item" type="primary" size="small" :loading=submitLoading @click="submit">保存</el-button>
         </el-form>
     </el-card>
-</div>  
+</div>
 
 <script>
     const app = new Vue({
@@ -833,10 +833,10 @@ Yii::$app->loadViewComponent('app-rich-text');
                         if(e.data.data) {
                             if(e.data.data.list.is_bonus == 1) {
                                 this.form = e.data.data.list;
-                                this.bonusSwitch = this.form.is_bonus;    
+                                this.bonusSwitch = this.form.is_bonus;
                                 this.showTreaty = this.form.is_agreement;
                                 this.pay_type = this.form.pay_type;
-                                this.bg_url = this.form.bg_url; 
+                                this.bg_url = this.form.bg_url;
                                 this.bottom_bg_url = this.form.form.bottom_bg_url;
                                 if(this.form.pay_type.length == 0) {
                                     this.pay_type = ['auto']

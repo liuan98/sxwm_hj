@@ -68,7 +68,7 @@ class LotteryPosterForm extends GrafikaOption
         isset($option['nickname']) && $option['nickname']['text'] = \Yii::$app->user->identity->nickname;
 
         if (isset($option['price'])) {
-            $option['price']['text'] = sprintf("￥%s", $goods->goods->price);
+            $option['price']['text'] = sprintf("FCFA%s", $goods->goods->price);
 
             $width = imagettfbbox($option['price']['font'], 0, $this->font_path, $option['price']['text']);
             if ($option['price']['del_line']) {

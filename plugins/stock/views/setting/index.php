@@ -702,7 +702,7 @@ Yii::$app->loadViewComponent('app-rich-text');
                                         </div>
                                         <div class="bonus-info" flex="dir:top main:center">
                                             <div>{{form.form.price_text ? form.form.price_text : '分红金额'}}</div>
-                                            <div class="bonus-price">￥659.62</div>
+                                            <div class="bonus-price">FCFA659.62</div>
                                         </div>
                                     </div>
                                     <div class="balance-item">
@@ -715,7 +715,7 @@ Yii::$app->loadViewComponent('app-rich-text');
                                         </div>
                                         <div class="bonus-info" flex="dir:top main:center">
                                             <div>{{form.form.price_text ? form.form.price_text : '分红金额'}}</div>
-                                            <div class="bonus-price">￥95683.26</div>
+                                            <div class="bonus-price">FCFA95683.26</div>
                                         </div>
                                     </div>
                                     <div class="balance-item">
@@ -728,7 +728,7 @@ Yii::$app->loadViewComponent('app-rich-text');
                                         </div>
                                         <div class="bonus-info" flex="dir:top main:center">
                                             <div>{{form.form.price_text ? form.form.price_text : '分红金额'}}</div>
-                                            <div class="bonus-price">￥8482.52</div>
+                                            <div class="bonus-price">FCFA8482.52</div>
                                         </div>
                                     </div>
                                 </div>

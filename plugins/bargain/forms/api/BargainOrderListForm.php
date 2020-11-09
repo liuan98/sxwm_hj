@@ -71,7 +71,7 @@ class BargainOrderListForm extends ApiModel
                         $newItem['status_content'] = '砍价进行中';
                         break;
                     case 1:
-                        $newItem['status_content'] = "砍价成功￥{$newItem['now_price']}";
+                        $newItem['status_content'] = "砍价成功FCFA{$newItem['now_price']}";
                         $newItem['content'] = '已结束';
                         break;
                     case 2:

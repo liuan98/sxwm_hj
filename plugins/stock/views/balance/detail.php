@@ -42,7 +42,7 @@
         border-right: 0;
         outline: 0;
     }
-    
+
     .input-item .el-input-group__append {
         background-color: #fff;
         border-left: 0;
@@ -90,7 +90,7 @@
                 <el-table-column label="订单数" prop="order_num"></el-table-column>
                 <el-table-column label="分红金额" prop="price" width="250">
                     <template slot-scope="scope">
-                        <div>￥{{scope.row.bonus_price}}({{scope.row.bonus_rate}}%分红比例)</div>
+                        <div>FCFA{{scope.row.bonus_price}}({{scope.row.bonus_rate}}%分红比例)</div>
                     </template>
                 </el-table-column>
                 <el-table-column label="股东数" prop="stock_num"></el-table-column>
@@ -142,7 +142,7 @@
                 </el-table-column>
                 <el-table-column label="分红金额" prop="price">
                     <template slot-scope="scope">
-                        <div>￥{{scope.row.price}}</div>
+                        <div>FCFA{{scope.row.price}}</div>
                     </template>
                 </el-table-column>
             </el-table>
@@ -229,6 +229,6 @@
                 this.loading = true;
                 this.loadData(page);
             }
-        } 
+        }
     })
 </script>

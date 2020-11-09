@@ -204,8 +204,8 @@ Yii::$app->loadViewComponent('app-dialog-select')
                                 </div>
                                 <div flex="dir:left box:first cross:center" style="margin: 5px 0;" v-if="item.is_show == 1">
                                     <div style="color: #a9abaf;font-size: 12px">
-                                        <div>原价 <span class="price">￥{{item.cloud_price}}</span></div>
-                                        <div>售价 <span class="price">￥{{item.price}}</span></div>
+                                        <div>原价 <span class="price">FCFA{{item.cloud_price}}</span></div>
+                                        <div>售价 <span class="price">FCFA{{item.price}}</span></div>
                                     </div>
                                     <div class="info-about" flex="main:right">
                                         <template v-if="item.order">
@@ -246,7 +246,7 @@ Yii::$app->loadViewComponent('app-dialog-select')
                                 <div v-else>
                                     <div flex="cross:center main:justify">
                                         <div class="price">
-                                            ￥{{item.price}}
+                                            FCFA{{item.price}}
                                         </div>
                                         <el-button size="mini" type="primary" @click="toUse(item)" v-if="item.is_use">加载
                                         </el-button>

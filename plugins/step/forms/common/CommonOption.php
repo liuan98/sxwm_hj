@@ -95,7 +95,7 @@ class CommonOption
                 'top' => 554,
                 'left' => 15,
                 'color' => '#ff5c5c',
-                'text' => '5活力币+￥12',
+                'text' => '5活力币+FCFA12',
                 'file_type' => 'text',
             ],
         ];

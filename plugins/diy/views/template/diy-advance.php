@@ -189,12 +189,12 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                                         定金{{item.deposit}}抵{{item.swell_deposit}}
                                     </div>
                                     <div style="color: #ff4544;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;letter-spacing: -1px;">
-                                        <span>￥{{item.price}}</span><span v-if="data.listStyle == -1" style="color: #909399;text-decoration: line-through;font-size: 24px;margin-left: 10px;">￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.price}}</span><span v-if="data.listStyle == -1" style="color: #909399;text-decoration: line-through;font-size: 24px;margin-left: 10px;">FCFA{{item.originalPrice}}</span>
 
                                     </div>
 
                                     <div v-if="data.listStyle != -1" style="color: #909399;text-decoration: line-through;font-size: 24px;line-height: 1">
-                                        <span>￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.originalPrice}}</span>
                                     </div>
                                 </div>
                                 <div v-if="cShowBuyBtn" style="padding: 10px;">

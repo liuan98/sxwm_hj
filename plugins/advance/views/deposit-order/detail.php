@@ -152,7 +152,7 @@
                             width="180"
                             label="单价">
                         <template slot-scope="scope">
-                            <span>￥{{scope.row.price}}</span>
+                            <span>FCFA{{scope.row.price}}</span>
                         </template>
                     </el-table-column>
                     <el-table-column
@@ -167,12 +167,12 @@
                             width="180"
                             label="原价">
                         <template slot-scope="scope">
-                            <span>￥{{scope.row.original_price}}</span>
+                            <span>FCFA{{scope.row.original_price}}</span>
                         </template>
                     </el-table-column>
                 </el-table>
                 <div style="float: right;margin-top: 26px;font-size: 15px;color: #606266;margin-right: 10px;">
-                    商品定金：￥{{order.goods.advanceGoods.deposit}}
+                    商品定金：FCFA{{order.goods.advanceGoods.deposit}}
                 </div>
             </div>
         </div>

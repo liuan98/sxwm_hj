@@ -56,7 +56,7 @@ Yii::$app->loadViewComponent('app-goods');
                                     {{previewData.integral_num}}积分+{{previewData.price}}元
                                 </div>
                                 <div style="font-size: 8px;text-decoration: line-through;color:#888">
-                                    ￥{{previewData.original_price}}
+                                    FCFA{{previewData.original_price}}
                                 </div>
                             </div>
                         </div>

@@ -245,20 +245,20 @@ Yii::$app->loadViewComponent('app-order');
                             </div>
                         </div>
                         <div class="goods-price">
-                           ￥ {{item.goods.use_attr == 1 ? JSON.parse(item.goods_info).goods_attr.price : item.goods.price}}
+                           FCFA {{item.goods.use_attr == 1 ? JSON.parse(item.goods_info).goods_attr.price : item.goods.price}}
                         </div>
                         <div class="goods-number">
                             ×{{item.goods_num}}
                         </div>
                         <div class="goods-pay-price">
                             <div style="margin-bottom: 10px;">
-                                <span style="margin-right: 5px;">定金￥{{item.deposit}}</span>
+                                <span style="margin-right: 5px;">定金FCFA{{item.deposit}}</span>
                                 <el-tag size="small" type="warning" effect="dark" v-if="item.pay_type == 1">在线支付</el-tag>
                                 <el-tag size="small" type="warning" effect="dark" v-if="item.pay_type == 2">货到付款</el-tag>
                                 <el-tag size="small" type="warning" effect="dark" v-if="item.pay_type == 3">余额支付</el-tag>
                             </div>
                             <template v-if="item.refund > 0">
-                                <div>已退￥{{item.refund}}</div>
+                                <div>已退FCFA{{item.refund}}</div>
                             </template>
                         </div>
                         <div class="goods-operating">

@@ -56,7 +56,7 @@ class PosterForm extends GrafikaOption
 
         isset($option['pic']) && $option['pic']['file_path'] = $bargainGoods->goods->goodsWarehouse->cover_pic;
         isset($option['nickname']) && $option['nickname']['text'] = \Yii::$app->user->identity->nickname;
-        isset($option['price']) && $option['price']['text'] = sprintf('最低￥%s', $bargainGoods->min_price);
+        isset($option['price']) && $option['price']['text'] = sprintf('最低FCFA%s', $bargainGoods->min_price);
         isset($option['time_str']) && $option['time_str']['text'] = date('m.d H:i', strtotime($bargainGoods->end_time));
         isset($option['name']) && $option['name']['text'] = self::autowrap($option['name']['font'], 0, $this->font_path, $bargainGoods->goods->goodsWarehouse->name, 750 - $option['name']['left'], 2);
         isset($option['desc']) && $option['desc']['text'] = self::autowrap($option['desc']['font'], 0, $this->font_path, $option['desc']['text'], $option['desc']['width']);

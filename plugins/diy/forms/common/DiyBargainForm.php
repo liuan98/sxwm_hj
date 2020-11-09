@@ -50,7 +50,7 @@ class DiyBargainForm extends Model
             $apiGoods->isSales = 0;
             $arr = $apiGoods->getDetail();
             $arr['price'] = $bargainGoods->min_price;
-            $arr['price_content'] = $bargainGoods->min_price ? '￥' . $bargainGoods->min_price : '免费';
+            $arr['price_content'] = $bargainGoods->min_price ? 'FCFA' . $bargainGoods->min_price : '免费';
             $arr['start_time'] = $bargainGoods->begin_time;
             $arr['end_time'] = $bargainGoods->end_time;
             $newList[] = $arr;

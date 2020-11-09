@@ -202,7 +202,7 @@ class Plugin extends \app\plugins\Plugin
             if ($vip->image_is_free_delivery == 1) {
                 if ($mchItem['express_price'] != 0 ) {
                     $mchItem['express_price_origin'] = $mchItem['express_price'];
-                    $mchItem['express_price_desc'] = ($main->name ?? $vip->image_name).'包邮-￥'.$mchItem['express_price'];
+                    $mchItem['express_price_desc'] = ($main->name ?? $vip->image_name).'包邮-FCFA'.$mchItem['express_price'];
                     $mchItem['express_price'] = price_format(0);
                 } else {
                     $mchItem['express_price_desc'] = '';

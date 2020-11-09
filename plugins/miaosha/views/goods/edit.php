@@ -97,7 +97,7 @@ Yii::$app->loadViewComponent('app-goods');
                             <div flex="dir:top" style="font-size: 10px">
                                 <div style="font-size:26px;color:#ff4544;" :class="previewData.t_type">{{previewData.actualPrice}}</div>
                                 <div flex="dir:left">
-                                    <div style="color: #999999;text-decoration: line-through;">￥{{previewData.original_price}}</div>
+                                    <div style="color: #999999;text-decoration: line-through;">FCFA{{previewData.original_price}}</div>
                                     <div style="color: #999999;margin-left: 6px">销量{{previewData.virtual_sales}}{{previewData.unit}}</div>
                                 </div>
                             </div>

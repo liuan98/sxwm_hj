@@ -48,7 +48,7 @@
         border-right: 0;
         outline: 0;
     }
-    
+
     .input-item .el-input-group__append {
         background-color: #fff;
         border-left: 0;
@@ -169,9 +169,9 @@
                     </el-table-column>
                     <el-table-column width='180' prop='all_children' label="提现信息">
                         <template slot-scope="scope">
-                            <div>申请提现金额：￥{{scope.row.cash.price}}</div>
-                            <div>手续费：￥{{scope.row.cash.service_charge}}</div>
-                            <div>实际打款：￥{{scope.row.cash.actual_price}}</div>
+                            <div>申请提现金额：FCFA{{scope.row.cash.price}}</div>
+                            <div>手续费：FCFA{{scope.row.cash.service_charge}}</div>
+                            <div>实际打款：FCFA{{scope.row.cash.actual_price}}</div>
                         </template>
                     </el-table-column>
                     <el-table-column label="状态" width="80" prop="status_text">
@@ -249,9 +249,9 @@
     <el-dialog title="提示" :visible.sync="dialogAudit" width="30%">
         <div flex="dir:top main-center" style="text-align: center;font-size: 16px;">
             <div style="font-size: 18px;margin-bottom: 10px;">是否确认通过提现申请</div>
-            <div>申请提现金额：￥{{detail.cash.price}}</div>
-            <div>手续费：￥{{detail.cash.service_charge}}</div>
-            <div>实际打款：￥{{detail.cash.actual_price}}</div>
+            <div>申请提现金额：FCFA{{detail.cash.price}}</div>
+            <div>手续费：FCFA{{detail.cash.service_charge}}</div>
+            <div>实际打款：FCFA{{detail.cash.actual_price}}</div>
         </div>
         <div slot="footer" class="dialog-footer">
             <el-button size="small" @click="dialogAudit = false">取 消</el-button>
@@ -261,7 +261,7 @@
     <el-dialog title="提示" :visible.sync="dialogTransfer" width="100px">
         <div flex="dir:top main-center" style="text-align: center;font-size: 16px;">
             <div>是否确认打款</div>
-            <div>实际打款：<span style="color: #FF9C54">￥{{detail.cash.actual_price}}</span></div>
+            <div>实际打款：<span style="color: #FF9C54">FCFA{{detail.cash.actual_price}}</span></div>
         </div>
         <div slot="footer" class="dialog-footer">
             <el-button size="small" @click="dialogTransfer = false">取 消</el-button>

@@ -50,7 +50,7 @@ class OrderCancelTemplate extends BaseTemplate
     {
         $this->goodsName = '测试商品';
         $this->order_no = 'c927467';
-        $this->price = '￥1000.00';
+        $this->price = 'FCFA1000.00';
         $this->remark = '订单超时未支付';
         return $this->send();
     }

@@ -220,7 +220,7 @@ class Plugin extends \app\plugins\Plugin
         }
         /* @var Goods $goods */
         return [
-            'price_content' => $goods->integralMallGoods->integral_num . '积分' . '+￥' . $goods->getPrice()
+            'price_content' => $goods->integralMallGoods->integral_num . '积分' . '+FCFA' . $goods->getPrice()
         ];
     }
 }

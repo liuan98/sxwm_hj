@@ -86,8 +86,8 @@ Yii::$app->loadViewComponent('app-goods');
                                         <div>100人参与</div>
                                     </div>
                                     <div flex="dir:left" style="margin-top: 10px">
-                                        <div style="color:#ff4544;margin-right: 6px">￥0</div>
-                                        <div style="text-decoration: line-through;">原价￥{{previewData.original_price}}
+                                        <div style="color:#ff4544;margin-right: 6px">FCFA0</div>
+                                        <div style="text-decoration: line-through;">原价FCFA{{previewData.original_price}}
                                         </div>
                                     </div>
                                 </div>

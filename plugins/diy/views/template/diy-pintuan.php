@@ -144,7 +144,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                             <div flex="box:last cross:bottom">
                                 <div class="goods-price" :style="cPriceStyle">
                                     <div style="color: #ff4544">
-                                        <span style="letter-spacing: -1px;">￥{{item.pintuanPrice}}</span>
+                                        <span style="letter-spacing: -1px;">FCFA{{item.pintuanPrice}}</span>
                                     </div>
                                 </div>
                                 <div v-if="cShowBuyBtn" style="padding: 0 10px;">

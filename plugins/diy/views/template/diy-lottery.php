@@ -166,10 +166,10 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                                 <div class="goods-price" :style="cPriceStyle">
                                     <div style="color: #ff4544;">免费</div>
                                     <div v-if="data.listStyle == -1" style="color: #909399;text-decoration: line-through;position: absolute;left: 0;bottom: 0;font-size: 24px;">
-                                        <span>￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.originalPrice}}</span>
                                     </div>
                                     <div v-else style="color: #909399;text-decoration: line-through;font-size: 24px;line-height: 1">
-                                        <span>￥{{item.originalPrice}}</span>
+                                        <span>FCFA{{item.originalPrice}}</span>
                                     </div>
                                 </div>
                                 <div v-if="cShowBuyBtn" style="padding: 0 10px;">

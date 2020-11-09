@@ -93,7 +93,7 @@ class CommonOption
                 'top' => 554,
                 'left' => 15,
                 'color' => '#ff5c5c',
-                'text' => '￥9.9-120',
+                'text' => 'FCFA9.9-120',
                 'file_type' => 'text',
             ],
         ];

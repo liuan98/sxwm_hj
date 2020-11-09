@@ -11,7 +11,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
     .diy-mch .diy-component-preview .mch-list {
         padding: 9px;
     }
-    
+
     .diy-mch .diy-component-preview .mch-item {
         padding-bottom: 16px;
         margin-bottom: 12px;
@@ -170,7 +170,7 @@ Yii::$app->loadViewComponent('diy/diy-bg');
                             <div class="goods-pic"
                                  style="width: 210px;height: 210px;"
                                  :style="goods.picUrl?('background-image:url('+goods .picUrl+');'):''"></div>
-                            <div class="goods-price">￥{{goods.price}}</div>
+                            <div class="goods-price">FCFA{{goods.price}}</div>
                         </div>
                     </div>
                     <div v-else class="goods-list" flex="main:center cross:center"

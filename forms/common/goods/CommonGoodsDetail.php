@@ -289,7 +289,7 @@ class CommonGoodsDetail extends Model
             }
         }
         if ($this->goods->forehead > 0) {
-            $shipping .= sprintf('单品满￥%s包邮，', $this->goods->forehead);
+            $shipping .= sprintf('单品满FCFA%s包邮，', $this->goods->forehead);
             if ($this->goods->forehead < $this->getPriceMin()) {
                 $this->isExpress = true;
             }
@@ -855,7 +855,7 @@ class CommonGoodsDetail extends Model
         if (!$rule) {
             return '';
         }
-        return '￥' . price_format($rule['firstPrice']);
+        return 'FCFA' . price_format($rule['firstPrice']);
     }
 
     /**

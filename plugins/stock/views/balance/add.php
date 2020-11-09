@@ -135,8 +135,8 @@
                     <div class="show-info">
                         <div>时间段: <span v-if="detail.is_bonus == 1">{{detail.first_day}}~{{detail.last_day}}</span></div>
                         <div>订单数量: <span v-if="detail.is_bonus == 1">{{detail.order_num}}</span></div>
-                        <div>订单总金额: <span v-if="detail.is_bonus == 1">￥{{detail.total_pay_price}}</span></div>
-                        <div>分红总金额: <span v-if="detail.is_bonus == 1">￥{{detail.bonus_price}}(分红比例{{detail.stock_rate}}%)</span></div>
+                        <div>订单总金额: <span v-if="detail.is_bonus == 1">FCFA{{detail.total_pay_price}}</span></div>
+                        <div>分红总金额: <span v-if="detail.is_bonus == 1">FCFA{{detail.bonus_price}}(分红比例{{detail.stock_rate}}%)</span></div>
                         <div>股东数量: <span v-if="detail.is_bonus == 1">{{detail.stock_num}}</span></div>
                     </div>
                 </el-form-item>

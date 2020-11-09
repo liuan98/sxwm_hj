@@ -72,7 +72,7 @@ class GoodsForm extends Model
                 'video_url' => Video::getUrl($detail['video_url']),
                 'unit' => $detail['unit'],
                 'price' => $detail['price'],
-                'price_str' => $detail['price'] > 0 ? sprintf("￥%s元", $detail['price']) : '免费预约',
+                'price_str' => $detail['price'] > 0 ? sprintf("FCFA%s元", $detail['price']) : '免费预约',
                 'app_share_pic' => $detail['app_share_pic'],
                 'app_share_title' => $detail['app_share_title'],
                 'detail' => $detail['detail'],

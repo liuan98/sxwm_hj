@@ -75,12 +75,12 @@
     }
 
     .app-preview .text-price::before {
-        content: '￥';
+        content: 'FCFA';
         font-size: 60%;
     }
 
     .app-preview .text-price-all::before {
-        content: '￥';
+        content: 'FCFA';
         font-size: 100%;
     }
 
@@ -190,7 +190,7 @@
                                                 <div style="font-size:26px;color:#ff4544;"
                                                      :class="actual.type">{{actual.price}}
                                                 </div>
-                                                <div class="origin-price">￥{{ruleForm.original_price}}</div>
+                                                <div class="origin-price">FCFA{{ruleForm.original_price}}</div>
                                             </div>
                                             <div class="virtual-sales">销量{{ruleForm.virtual_sales}}{{ruleForm.unit}}
                                             </div>

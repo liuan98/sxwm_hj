@@ -91,7 +91,7 @@ Yii::$app->loadViewComponent('app-goods');
                                 <div flex="dir:left">
                                     <div style="padding:3px 6px;background: #feeeee;color:#ff4544;">2人拼团</div>
                                     <div style="margin-left: 3px;padding:3px 6px;background:#feeeee;color:#ff4544">
-                                        拼团立省￥{{previewData.original_price - previewData.group_min_price}}
+                                        拼团立省FCFA{{previewData.original_price - previewData.group_min_price}}
                                     </div>
                                 </div>
                             </div>

@@ -96,12 +96,12 @@ class OrderRefundSubmitForm extends Model
             // 退款金额不能大于商品单价
 
             if ($this->type === 1 && price_format($this->refund_price) > price_format($orderDetail->total_price + $advance_price)) {
-                throw new \Exception('最多可退款金额￥' . $orderDetail->total_price + $advance_price);
+                throw new \Exception('最多可退款金额FCFA' . $orderDetail->total_price + $advance_price);
             }
             // 退款金额需去除运费
             $realityPrice = $orderDetail->order->total_pay_price - $orderDetail->order->express_price ?: 0;
             if ($this->type == 1 && price_format($this->refund_price) > price_format($realityPrice + $advance_price)) {
-                throw new \Exception('最多可退款金额￥' . ($realityPrice + $advance_price));
+                throw new \Exception('最多可退款金额FCFA' . ($realityPrice + $advance_price));
             }
 
             if (count($orderDetail->userCards) > 0 && $this->type == 1) {

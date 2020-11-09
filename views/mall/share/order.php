@@ -57,16 +57,16 @@ $newMenuList = Yii::$app->serializer->encode($newMenuList);
                      :style="{width:orderTitle[3].width}">
                     <div v-if="order.order.first_parent_id == order.order.user_id">
                         <div shadow="never" style="margin: 10px">
-                            <div>自购返利<span class="price">￥{{order.order.first_price}}</span></div>
+                            <div>自购返利<span class="price">FCFA{{order.order.first_price}}</span></div>
                         </div>
                         <div shadow="never" style="margin: 10px" v-if="order.order.second_parent">
-                            <div>一级佣金<span class="price">￥{{order.order.second_price}}</span></div>
+                            <div>一级佣金<span class="price">FCFA{{order.order.second_price}}</span></div>
                             <div>昵称：{{order.order.second_parent.nickname}}</div>
                             <div v-if="order.order.second_parent.name">姓名：{{order.order.second_parent.name}}</div>
                             <div v-if="order.order.second_parent.mobile">手机：{{order.order.second_parent.mobile}}</div>
                         </div>
                         <div shadow="never" style="margin: 10px" v-if="order.order.third_parent">
-                            <div>二级佣金<span class="price">￥{{order.order.third_price}}</span></div>
+                            <div>二级佣金<span class="price">FCFA{{order.order.third_price}}</span></div>
                             <div>昵称：{{order.order.third_parent.nickname}}</div>
                             <div v-if="order.order.third_parent.name">姓名：{{order.order.third_parent.name}}</div>
                             <div v-if="order.order.third_parent.mobile">手机：{{order.order.third_parent.mobile}}</div>
@@ -74,19 +74,19 @@ $newMenuList = Yii::$app->serializer->encode($newMenuList);
                     </div>
                     <div v-else>
                         <div shadow="never" style="margin: 10px" v-if="order.order.first_parent">
-                            <div>一级佣金<span class="price">￥{{order.order.first_price}}</span></div>
+                            <div>一级佣金<span class="price">FCFA{{order.order.first_price}}</span></div>
                             <div>昵称：{{order.order.first_parent.nickname}}</div>
                             <div v-if="order.order.first_parent.name">姓名：{{order.order.first_parent.name}}</div>
                             <div v-if="order.order.first_parent.mobile">手机：{{order.order.first_parent.mobile}}</div>
                         </div>
                         <div shadow="never" style="margin: 10px" v-if="order.order.second_parent">
-                            <div>二级佣金<span class="price">￥{{order.order.second_price}}</span></div>
+                            <div>二级佣金<span class="price">FCFA{{order.order.second_price}}</span></div>
                             <div>昵称：{{order.order.second_parent.nickname}}</div>
                             <div v-if="order.order.second_parent.name">姓名：{{order.order.second_parent.name}}</div>
                             <div v-if="order.order.second_parent.mobile">手机：{{order.order.second_parent.mobile}}</div>
                         </div>
                         <div shadow="never" style="margin: 10px" v-if="order.order.third_parent">
-                            <div>三级佣金<span class="price">￥{{order.order.third_price}}</span></div>
+                            <div>三级佣金<span class="price">FCFA{{order.order.third_price}}</span></div>
                             <div>昵称：{{order.order.third_parent.nickname}}</div>
                             <div v-if="order.order.third_parent.name">姓名：{{order.order.third_parent.name}}</div>
                             <div v-if="order.order.third_parent.mobile">手机：{{order.order.third_parent.mobile}}</div>

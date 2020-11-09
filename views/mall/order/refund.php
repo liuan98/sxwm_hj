@@ -315,7 +315,7 @@ Yii::$app->loadViewComponent('order/app-edit-address');
                                 </div>
                                 <div style="width: 250px" flex="dir:left box:mean">
                                     <div flex="cross:center main:center">
-                                        <span>小计：￥{{goods.total_price}}</span>
+                                        <span>小计：FCFA{{goods.total_price}}</span>
                                     </div>
                                     <div flex="cross:center main:center">数量：x {{goods.num}}</div>
                                 </div>
@@ -359,10 +359,10 @@ Yii::$app->loadViewComponent('order/app-edit-address');
                     <!-- 金额 -->
                     <div class="app-order-info" style="width:8%">
                         <div flex="dir:top">
-                            <div>实付金额:￥{{item.order.total_pay_price}}</div>
+                            <div>实付金额:FCFA{{item.order.total_pay_price}}</div>
                             <template v-if="item.type == 1">
-                                <div>申请退款:￥{{item.refund_price}}</div>
-                                <div v-if="item.is_refund == 1">实际退款:￥{{item.reality_refund_price}}</div>
+                                <div>申请退款:FCFA{{item.refund_price}}</div>
+                                <div v-if="item.is_refund == 1">实际退款:FCFA{{item.reality_refund_price}}</div>
                             </template>
                         </div>
                     </div>
