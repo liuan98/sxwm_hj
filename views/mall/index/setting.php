@@ -148,7 +148,7 @@
                                 <el-form-item label="商城名称" prop="name">
                                     <el-input v-model="ruleForm.name"></el-input>
                                 </el-form-item>
-                                 <el-form-item label="利率" prop="name">
+                                 <el-form-item label="利率" prop="rate">
                                     <el-input v-model="ruleForm.setting.rate"></el-input>
                                 </el-form-item>
                                 <!-- jambalaya添加订单金额满多少配送 -->
@@ -1138,6 +1138,8 @@
                         send_type: [],
                         good_negotiable: [],
                     },
+
+
                     recharge: {}
                 },
                 rules: {
@@ -1148,6 +1150,10 @@
                     over_time: [
                         {validator: noPay, trigger: 'blur'}
                     ],
+                     rate: [
+                                            {required: true, message: '请填写利率。'},
+
+                                        ],
                     delivery_time: [
                         {validator: delivery, trigger: 'blur'}
                     ],
