@@ -144,10 +144,13 @@
                                 <span>基本设置</span>
                             </div>
                             <div class="form-body">
+
                                 <el-form-item label="商城名称" prop="name">
                                     <el-input v-model="ruleForm.name"></el-input>
                                 </el-form-item>
-
+                                 <el-form-item label="利率" prop="name">
+                                    <el-input v-model="ruleForm.setting.rate"></el-input>
+                                </el-form-item>
                                 <!-- jambalaya添加订单金额满多少配送 -->
                                 <el-form-item label="满额配送" prop="minordermoney">
                                     <el-input v-model="ruleForm.setting.minordermoney"></el-input>
