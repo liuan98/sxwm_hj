@@ -931,6 +931,11 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
     </el-card>
 </template>
 <script src="<?= Yii::$app->request->baseUrl ?>/statics/unpkg/vuedraggable@2.18.1/dist/vuedraggable.umd.min.js"></script>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZxAbfgeDc2z6YUOaBs8b0NuQgm_cHLdw&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
 <script>
     Vue.component('app-goods', {
         template: '#app-goods',
