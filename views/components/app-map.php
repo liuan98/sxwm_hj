@@ -224,6 +224,7 @@ showAddress(map, marker)
                         } else {
                             alert("Geocoder failed due to: " + status);
                         }
+                        }
                         })
         },
 
