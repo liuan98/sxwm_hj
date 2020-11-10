@@ -201,13 +201,29 @@ showAddress(map, marker)
                 this.infowindow.setContent(place.name);
                 this.infowindow.open(map);
             });
-            this.getAddress(place.geometry.location.lat(),place.geometry.location.lng())
+            this.getAddress(marker)
         },
         // 根据经纬度获取地址信息
-        getAddress(latitude,longitude){
-        let geocoder=new google.maps.Geocoder()
-       let info=geocoder.getFromLocation(latitude, longitude, 1);
-        console.log(info)
+        getAddress(marker){
+          var latlng = marker.getPosition();
+                  let geocoder = new google.maps.Geocoder();
+
+                    //根据经纬度获取地址信息
+                    geocoder.geocode({'latLng': latlng}, function(results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            if (results[1]) {
+                                var address = results[1].formatted_address + "<br />";
+                                address = results[0].formatted_address + "<br />";
+                                address += "纬度：" + latlng.lat() + "<br />";
+                                address += "经度：" + latlng.lng();
+
+                                infowindow.setContent(address);
+                                infowindow.open(map, marker);
+                                transfer(latlng.lat(),latlng.lng());
+                            }
+                        } else {
+                            alert("Geocoder failed due to: " + status);
+                        }
         },
 
             // 初始化地图
