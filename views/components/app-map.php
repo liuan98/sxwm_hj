@@ -148,10 +148,11 @@ showAddress(map, marker)
                 if (status == google.maps.GeocoderStatus.OK) {
                     if (results[1]) {
                         var address = results[1].formatted_address + "<br />";
+
                         address = results[0].formatted_address + "<br />";
                         address += "纬度：" + latlng.lat() + "<br />";
                         address += "经度：" + latlng.lng();
-
+                         console.log(address)
                         infowindow.setContent(address);
                         infowindow.open(map, marker);
                         transfer(latlng.lat(),latlng.lng());
