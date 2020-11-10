@@ -190,7 +190,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
 
                         <!-- 基本信息 -->
                         <slot name="before_info"></slot>
-                        <el-card shadow="never" class="mt-24">
+                        <el-card shadow="never" class="mt-12">
                             <div slot="header">
                                 <span>基本信息</span>
                             </div>
@@ -405,7 +405,19 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                 </el-col>
                             </el-row>
                         </el-card>
-
+                        <el-card  shadow="never">
+                        <el-row>
+                        <el-form-item label="联系手机号">
+                    <el-input v-model="goods_warehouse.phone"></el-input>
+                     </el-form-item>
+                      <app-map @map-submit="mapEvent"
+                                                              :address="goods_warehouse.address"
+                                                              :lat="goods_warehouse.latitude"
+                                                              :long="goods_warehouse.longitude">
+                                                         <el-button size="small">展开地图</el-button>
+                                                     </app-map>
+                        </el-row>
+                        </el-card>
                         <!-- 价格库存 -->
                         <slot name="before_attr"></slot>
                         <el-card shadow="never" class="mt-24">
@@ -1249,6 +1261,12 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
 
         },
         methods: {
+          //地图确定事件
+                    mapEvent(e, address) {
+                        let self = this;
+                        self.ruleForm.latitude_longitude = e.lat + ',' + e.long;
+                        self.ruleForm.address = e.address;
+                    },
             showPreview() {
                 this.$refs.preview.previewGoods();
                 this.$emit('handle-preview', this.ruleForm);
