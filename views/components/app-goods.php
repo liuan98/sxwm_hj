@@ -468,7 +468,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                             <label slot="label">{{item}}</label>
                                             <el-input v-model="ruleForm[key]"></el-input>
                                         </el-form-item>
-                                        <el-form-item v-if="is_show == 1" prop="original_price">
+                                        <el-form-item v-if="is_show == 1">
                                             <template slot="label">
                                                 <span>原价</span>
                                                 <el-tooltip effect="dark" content="以划线形式显示" placement="top">
