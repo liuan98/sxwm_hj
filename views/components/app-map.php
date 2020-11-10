@@ -146,6 +146,7 @@ showAddress(map, marker)
             //根据经纬度获取地址信息
             geocoder.geocode({'latLng': latlng}, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
+                console.log(results)
                     if (results[1]) {
                         var address = results[1].formatted_address + "<br />";
 
