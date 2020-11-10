@@ -405,15 +405,16 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                 </el-col>
                             </el-row>
                         </el-card>
-                        <el-card  shadow="never">
+                         <slot name="before_info"></slot>
+                                               <el-card shadow="never" class="mt-12">
                         <el-row>
                         <el-form-item label="联系手机号">
                     <el-input v-model="goods_warehouse.phone"></el-input>
                      </el-form-item>
                       <app-map @map-submit="mapEvent"
                                                               :address="goods_warehouse.address"
-                                                              :lat="goods_warehouse.latitude"
-                                                              :long="goods_warehouse.longitude">
+                                                              :lat="1"
+                                                              :long="1">
                                                          <el-button size="small">展开地图</el-button>
                                                      </app-map>
                         </el-row>
