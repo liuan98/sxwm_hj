@@ -65,7 +65,7 @@
             },
             title: String,
         },
-  
+
         data() {
             return {
                 longitude: '', // 经度(大)
@@ -105,8 +105,9 @@
                 this.initMap();
             },
             // 谷歌地图
-            
+
               initMap() {
+              console.log(111)
                   console.log(this.lat,this.long)
             const sydney = new google.maps.LatLng(parseFloat(this.lat), parseFloat(this.long));
             this.infowindow = new google.maps.InfoWindow();
@@ -140,7 +141,7 @@ showAddress(map, marker)
         {
             var latlng = marker.getPosition();
             geocoder = new google.maps.Geocoder();
- 
+
             //根据经纬度获取地址信息
             geocoder.geocode({'latLng': latlng}, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
@@ -149,7 +150,7 @@ showAddress(map, marker)
                         address = results[0].formatted_address + "<br />";
                         address += "纬度：" + latlng.lat() + "<br />";
                         address += "经度：" + latlng.lng();
- 
+
                         infowindow.setContent(address);
                         infowindow.open(map, marker);
                         transfer(latlng.lat(),latlng.lng());
@@ -170,19 +171,19 @@ showAddress(map, marker)
             // console.log(document.getElementById("input").value)
             // console.log(new google.maps)
             // console.log( google.maps.places)
-         
+
             this.service =new google.maps.places.PlacesService(this.map);
             console.log(this.service)
             let that=this;
             this.service.findPlaceFromQuery(request, (results, status) => {
                 console.log(request,results,status)
                 if (status === google.maps.places.PlacesServiceStatus.OK) {
-                    
+
                     for (let i = 0; i < results.length; i++) {
                         that.createMarker(results[i]);
                     }
                     this.newAddress=results[0].formatted_address;
-                  
+
                     this.lat_long=results[0].geometry.location.lat()+","+results[0].geometry.location.lng()
                     this.latitude=results[0].geometry.location.lat()
                     this.longitude= results[0].geometry.location.lng()
@@ -201,7 +202,7 @@ showAddress(map, marker)
                 this.infowindow.open(map);
             });
         },
-            
+
             // 初始化地图
             // initMap() {
             //     let self = this;
