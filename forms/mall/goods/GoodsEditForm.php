@@ -81,7 +81,7 @@ class GoodsEditForm extends BaseGoodsEdit
         }
 
         $transaction = \Yii::$app->db->beginTransaction();
-
+        if(empty($this->original_price)) $this->original_price=0;
         try {
             $this->attrValidator();
             $this->attrGroupNameValidator();
