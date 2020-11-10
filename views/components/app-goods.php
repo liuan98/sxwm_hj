@@ -189,7 +189,9 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         </el-card>
 
                         <!-- 基本信息 -->
+                         <div style="display:flex;justify-content:space-between">
                         <slot name="before_info"></slot>
+
                         <el-card shadow="never" class="mt-12">
                             <div slot="header">
                                 <span>基本信息</span>
@@ -419,6 +421,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                                      </app-map>
                         </el-row>
                         </el-card>
+                        </div>
                         <!-- 价格库存 -->
                         <slot name="before_attr"></slot>
                         <el-card shadow="never" class="mt-24">

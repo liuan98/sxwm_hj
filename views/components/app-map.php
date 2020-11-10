@@ -201,6 +201,13 @@ showAddress(map, marker)
                 this.infowindow.setContent(place.name);
                 this.infowindow.open(map);
             });
+            this.getAddress(place.geometry.location.lat(),place.geometry.location.lng())
+        },
+        // 根据经纬度获取地址信息
+        getAddress(latitude,longitude){
+        let geocoder=new google.maps.Geocoder()
+       let info=geocoder.getFromLocation(latitude, longitude, 1);
+        console.log(info)
         },
 
             // 初始化地图
