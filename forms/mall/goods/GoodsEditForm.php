@@ -41,7 +41,7 @@ class GoodsEditForm extends BaseGoodsEdit
     public function rules()
     {
         return array_merge(parent::rules(), [
-            [['name', 'original_price', 'cost_price', 'detail'
+            [['name', 'cost_price', 'detail'
                 , 'unit',], 'required'],
             [['is_quick_shop', 'is_sell_well', 'is_negotiable'], 'integer'],
             [['video_url'], 'string'],
