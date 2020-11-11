@@ -70,6 +70,10 @@ use Yii;
  * @property int $sales 已售数量
  * @property string $pageUrl 商品跳转链接
  * @property GoodsShare $shareLevel
+ * @property string $longitude 经度
+ * @property string $latitude 纬度
+ * @property string $phone 手机
+ * @property string $address 地址
  */
 class Goods extends ModelActiveRecord
 {
