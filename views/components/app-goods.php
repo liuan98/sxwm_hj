@@ -189,7 +189,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         </el-card>
 
                         <!-- 基本信息 -->
-                         <div style="display:flex;justify-content:space-between">
+                         <div style="display:flex;">
                         <slot name="before_info"></slot>
 
                         <el-card shadow="never" class="mt-12">
@@ -408,7 +408,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                             </el-row>
                         </el-card>
                          <slot name="before_info"></slot>
-                                               <el-card shadow="never" class="mt-12">
+                                               <el-card shadow="never" class="mt-12" style="flex:1">
                         <el-row>
                         <el-form-item label="联系手机号">
                     <el-input v-model="goods_warehouse.phone"></el-input>
