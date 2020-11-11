@@ -85,6 +85,12 @@ abstract class BaseGoodsEdit extends Model
 
     public $mch_id;
 
+    //地图
+    public $longitude;
+    public $latitude;
+    public $phone;
+    public $address;
+
     protected $newAttrs;
     protected $sign;
     /** @var  Mch */
