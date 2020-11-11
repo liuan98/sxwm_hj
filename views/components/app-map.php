@@ -153,7 +153,7 @@
               initMap() {
               console.log(111)
                   console.log(this.lat,this.long)
-                  this.getAddress=this.lat+","+this.long
+                  this.lat_long=this.lat+","+this.long
             const sydney = new google.maps.LatLng(parseFloat(this.lat), parseFloat(this.long));
             this.infowindow = new google.maps.InfoWindow();
             this.map = new google.maps.Map(document.getElementById("container"), {
