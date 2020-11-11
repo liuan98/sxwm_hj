@@ -1284,7 +1284,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         self.form.address = e.address;
                         self.form.latitude=e.lat;
                         self.form.longitude=e.long;
-                        console.log(self.ruleForm)
+                        console.log(self.form)
                     },
             showPreview() {
                 this.$refs.preview.previewGoods();
