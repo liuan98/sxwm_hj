@@ -1401,6 +1401,8 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                             self.btnLoading = false;
                             if (e.data.code === 0) {
                                 self.$message.success(e.data.msg);
+                                console.log(self.cForm)
+                                console.log(self.attrGroups)
                                 return false
                                 if (typeof this.referrer === 'object') {
                                     navigateTo(this.referrer)
