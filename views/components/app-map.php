@@ -222,12 +222,12 @@ showAddress(map, marker)
                                 address += "纬度：" + latlng.lat() + "<br />";
                                 address += "经度：" + latlng.lng();
                                   console.log(address)
-                                   this.latitude=latlng.lat();
-                                   this.longitude=latlng.lng();
-                                   this.newAddress=results[0].formatted_address;
-                                                    
+                                   that.latitude=latlng.lat();
+                                   that.longitude=latlng.lng();
+                                   that.newAddress=results[0].formatted_address;
+
                                 that.infowindow.setContent(address);
-                                that.infowindow.open(map, marker);
+                                //that.infowindow.open(map, marker);
                                 //transfer(latlng.lat(),latlng.lng());
                             }
                         } else {
