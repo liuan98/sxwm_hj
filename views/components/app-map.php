@@ -270,7 +270,7 @@ showAddress(map, marker)
                                    that.longitude=latlng.lng();
                                    that.newAddress=results[0].formatted_address;
 that.lat_long=latlng.lat()+","+latlng.lng()
-if(！that.latitude){
+if(!that.latitude){
 that.$emit('map-submit', {
                     lat: that.latitude,
                     long: that.longitude,
