@@ -1272,9 +1272,13 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
         methods: {
           //地图确定事件
                     mapEvent(e, address) {
+                    console.log(e)
                         let self = this;
                         self.ruleForm.latitude_longitude = e.lat + ',' + e.long;
                         self.ruleForm.address = e.address;
+                        self.ruleForm.latitude=e.lat;
+                        self.ruleForm.longitude=e.longitude;
+
                     },
             showPreview() {
                 this.$refs.preview.previewGoods();

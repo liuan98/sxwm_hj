@@ -67,7 +67,7 @@
                     </el-form>
                     <div class="map" id="container" :style="style"></div>
                     <span style="height:30px;display:none" id="city"></span>
-                    <div slot="footer" class="dialog-footer">
+                    <div slot="footer" class="dialog-footer" v-if="showDialog">
                         <el-button type="primary" @click="confirm">确 定</el-button>
                     </div>
         <div @click="dialogVisible = !dialogVisible" style="display: inline-block">
@@ -270,6 +270,14 @@ showAddress(map, marker)
                                    that.longitude=latlng.lng();
                                    that.newAddress=results[0].formatted_address;
 that.lat_long=latlng.lat()+","+latlng.lng()
+if(！that.latitude){
+that.$emit('map-submit', {
+                    lat: that.latitude,
+                    long: that.longitude,
+                    address: that.newAddress
+                });
+}
+
                                 that.infowindow.setContent(address);
                                 //that.infowindow.open(map, marker);
                                 //transfer(latlng.lat(),latlng.lng());
