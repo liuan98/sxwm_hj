@@ -1440,6 +1440,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                     self.cardLoading = false;
                     if (e.data.code == 0) {
                         let detail = e.data.data.detail;
+                        self.form=e.data.data.detail
                         if(detail['use_attr'] === 0) {
                             detail['attr_groups'] = [];
                         }

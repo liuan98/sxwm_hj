@@ -248,7 +248,7 @@ showAddress(map, marker)
                 this.infowindow.setContent(place.name);
                 this.infowindow.open(map);
             });
-
+            this.getAddress(marker)
         },
         // 根据经纬度获取地址信息
         getAddress(marker){
