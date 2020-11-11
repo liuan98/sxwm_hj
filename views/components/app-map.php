@@ -93,7 +93,10 @@
                 default: '',
             },
             title: String,
-            showDialog:Boolean
+            showDialog:{
+            type:Boolean,
+            default:false
+            }
         },
 
         data() {
