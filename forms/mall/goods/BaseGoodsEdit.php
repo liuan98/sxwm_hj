@@ -355,6 +355,11 @@ abstract class BaseGoodsEdit extends Model
         $goods->sign = $this->setGoodsSign();
         $goods->mch_id = $this->mch_id;
         $goods->is_default_services = $this->is_default_services;
+        //地图
+        $goods->longitude = $this->longitude;
+        $goods->latitude = $this->latitude;
+        $goods->phone = $this->phone;
+        $goods->address = $this->address;
         $res = $goods->save();
 
         if (!$res) {
