@@ -10,7 +10,7 @@
         <el-dialog :title="title ? title : '地图展示'"
                    :visible.sync="dialogVisible"
                    @opened="dialogOpened"
-                   :close-on-click-modal="false">
+                   :close-on-click-modal="false" v-if="showDialog">
             <el-form label-width="80px" size="small">
                 <el-row>
                     <el-col :span="12">
@@ -41,6 +41,35 @@
                 <el-button type="primary" @click="confirm">确 定</el-button>
             </div>
         </el-dialog>
+         <el-form label-width="80px" size="small" v-if="!showDialog">
+                        <el-row>
+                            <el-col :span="12">
+                                <el-form-item label="地址搜索">
+                                    <el-input placeholder="请输入具体地址" v-model="mapKeyword">
+                                        <el-button @keyup.enter.native="mapSearch" @click="mapSearch" slot="append"
+                                                   icon="el-icon-search"></el-button>
+                                    </el-input>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                        <el-row>
+                            <el-col :span="12">
+                                <el-form-item label="地址">
+                                    <el-input disabled v-model="newAddress"></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="12">
+                                <el-form-item label="纬度|经度">
+                                    <el-input disabled v-model="lat_long"></el-input>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                    </el-form>
+                    <div class="map" id="container" :style="style"></div>
+                    <span style="height:30px;display:none" id="city"></span>
+                    <div slot="footer" class="dialog-footer">
+                        <el-button type="primary" @click="confirm">确 定</el-button>
+                    </div>
         <div @click="dialogVisible = !dialogVisible" style="display: inline-block">
             <slot></slot>
         </div>
@@ -64,6 +93,7 @@
                 default: '',
             },
             title: String,
+            showDialog:Boolean
         },
 
         data() {
