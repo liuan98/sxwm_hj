@@ -113,7 +113,7 @@ abstract class BaseGoodsEdit extends Model
             [['goods_no', 'rebate', 'app_share_title', 'app_share_pic', 'attr_default_name'], 'string'],
             [['forehead', 'id'], 'number'],
             [['cats', 'mchCats', 'services', 'cards', 'attr', 'attrGroups', 'member_price',
-                'select_attr_groups', 'shareLevelList'], 'safe'],
+                'select_attr_groups', 'shareLevelList','longitude','latitude','phone','address'], 'safe'],
             [['virtual_sales', 'freight_id', 'is_level', 'is_level_alone', 'forehead', 'forehead_integral',
                 'give_integral', 'individual_share', 'is_level_alone', 'pieces', 'share_type', 'accumulative',
                 'attr_setting_type', 'goods_weight', 'is_area_limit', 'form_id'], 'default', 'value' => 0],
@@ -343,6 +343,12 @@ abstract class BaseGoodsEdit extends Model
         $goods->individual_share = $this->individual_share;
         $goods->attr_setting_type = $this->attr_setting_type;
         $goods->form_id = $this->form_id;
+        //地图
+        $goods->longitude = $this->longitude;
+        $goods->latitude = $this->latitude;
+        $goods->phone = $this->phone;
+        $goods->address = $this->address;
+
         $goods->is_area_limit = $this->is_area_limit;
         $goods->area_limit = \Yii::$app->serializer->encode($this->area_limit);
         if ($this->mch_id) {
@@ -355,11 +361,6 @@ abstract class BaseGoodsEdit extends Model
         $goods->sign = $this->setGoodsSign();
         $goods->mch_id = $this->mch_id;
         $goods->is_default_services = $this->is_default_services;
-        //地图
-        $goods->longitude = $this->longitude;
-        $goods->latitude = $this->latitude;
-        $goods->phone = $this->phone;
-        $goods->address = $this->address;
         $res = $goods->save();
 
         if (!$res) {

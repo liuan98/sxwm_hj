@@ -70,6 +70,10 @@ use Yii;
  * @property int $sales 已售数量
  * @property string $pageUrl 商品跳转链接
  * @property GoodsShare $shareLevel
+ * @property string $longitude 经度
+ * @property string $latitude 纬度
+ * @property string $phone 手机
+ * @property string $address 地址
  */
 class Goods extends ModelActiveRecord
 {
@@ -153,9 +157,12 @@ class Goods extends ModelActiveRecord
             'payment_order' => '支付订单数',
             'form_id' => '自定义表单id  0--表示默认表单 -1--表示不使用表单',
             'confine_order_count' => '限单数量',
+            'longitude' => '经度',
+            'latitude' => '纬度',
+            'phone' => '手机',
+            'address' => '地址',
         ];
     }
-
     public function getServices()
     {
         return $this->hasMany(GoodsServices::className(), ['id' => 'service_id'])
