@@ -413,7 +413,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         <el-form-item label="联系手机号">
                     <el-input v-model="form.phone" type="number"></el-input>
                      </el-form-item>
-                      <app-map @map-submit="mapEvent" :show-dialog="false"
+                      <app-map v-if="showMap" @map-submit="mapEvent" :show-dialog="false"
                                                               :address="form.address"
                                                               :lat="form.latitude?form.latitude:0"
                                                               :long="form.longitude?form.longitude:0">
@@ -1224,6 +1224,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 is_show_share: 1,
                 video_type: 1,
                 cardDialogVisible: false,
+                showMap:false
             };
         },
         created() {
@@ -1441,6 +1442,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                     if (e.data.code == 0) {
                         let detail = e.data.data.detail;
                         self.form=e.data.data.detail
+                        self.showMap=true
                         if(detail['use_attr'] === 0) {
                             detail['attr_groups'] = [];
                         }
