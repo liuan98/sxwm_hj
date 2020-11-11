@@ -225,7 +225,7 @@ showAddress(map, marker)
                                    that.latitude=latlng.lat();
                                    that.longitude=latlng.lng();
                                    that.newAddress=results[0].formatted_address;
-
+that.lat_long=latlng.lat()+","+latlng.lng()
                                 that.infowindow.setContent(address);
                                 //that.infowindow.open(map, marker);
                                 //transfer(latlng.lat(),latlng.lng());
