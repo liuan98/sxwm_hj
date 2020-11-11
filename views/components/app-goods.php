@@ -1280,7 +1280,10 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         self.ruleForm.latitude_longitude = e.lat + ',' + e.long;
                         self.ruleForm.address = e.address;
                         self.ruleForm.latitude=e.lat;
-                        self.ruleForm.longitude=e.longitude;
+                        self.ruleForm.longitude=e.longitude;  self.ruleForm.latitude_longitude = e.lat + ',' + e.long;
+                        self.form.address = e.address;
+                        self.form.latitude=e.lat;
+                        self.form.longitude=e.longitude;
                         console.log(self.ruleForm)
                     },
             showPreview() {
