@@ -131,6 +131,7 @@
         },
         mouted(){
            if(this.showDialog==false){
+           console.log(123)
              this.newAddress = this.address ? this.address : '';
                            this.initMap();
            }
