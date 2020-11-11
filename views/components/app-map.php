@@ -209,20 +209,22 @@ showAddress(map, marker)
         // 根据经纬度获取地址信息
         getAddress(marker){
           var latlng = marker.getPosition();
+          let that=this;
                   let geocoder = new google.maps.Geocoder();
 
                     //根据经纬度获取地址信息
                     geocoder.geocode({'latLng': latlng}, function(results, status) {
                         if (status == google.maps.GeocoderStatus.OK) {
+                        console.log(results)
                             if (results[1]) {
                                 var address = results[1].formatted_address + "<br />";
                                 address = results[0].formatted_address + "<br />";
                                 address += "纬度：" + latlng.lat() + "<br />";
                                 address += "经度：" + latlng.lng();
-
-                                infowindow.setContent(address);
-                                infowindow.open(map, marker);
-                                transfer(latlng.lat(),latlng.lng());
+                                  console.log(address)
+                                that.infowindow.setContent(address);
+                                that.infowindow.open(map, marker);
+                                //transfer(latlng.lat(),latlng.lng());
                             }
                         } else {
                             alert("Geocoder failed due to: " + status);
