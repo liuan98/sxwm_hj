@@ -415,8 +415,8 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                      </el-form-item>
                       <app-map @map-submit="mapEvent" :show-dialog="false"
                                                               :address="goods_warehouse.address"
-                                                              :lat="1"
-                                                              :long="1">
+                                                              :lat="goods_warehouse.latitude?goods_warehouse.latitude:0"
+                                                              :long="goods_warehouse.longitude?goods_warehouse.longitude:0">
 
                                                      </app-map>
                         </el-row>
