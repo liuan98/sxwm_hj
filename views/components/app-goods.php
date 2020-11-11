@@ -411,12 +411,12 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                                <el-card shadow="never" class="mt-12" style="flex:1">
                         <el-row>
                         <el-form-item label="联系手机号">
-                    <el-input v-model="ruleForm.phone" type="number"></el-input>
+                    <el-input v-model="form.phone" type="number"></el-input>
                      </el-form-item>
                       <app-map @map-submit="mapEvent" :show-dialog="false"
-                                                              :address="ruleForm.address"
-                                                              :lat="ruleForm.latitude?ruleForm.latitude:0"
-                                                              :long="ruleForm.longitude?ruleForm.longitude:0">
+                                                              :address="form.address"
+                                                              :lat="form.latitude?form.latitude:0"
+                                                              :long="form.longitude?form.longitude:0">
 
                                                      </app-map>
                         </el-row>
@@ -1281,7 +1281,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         self.ruleForm.address = e.address;
                         self.ruleForm.latitude=e.lat;
                         self.ruleForm.longitude=e.longitude;
-
+                        console.log(self.ruleForm)
                     },
             showPreview() {
                 this.$refs.preview.previewGoods();
