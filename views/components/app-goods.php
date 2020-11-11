@@ -411,7 +411,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                                <el-card shadow="never" class="mt-12" style="flex:1">
                         <el-row>
                         <el-form-item label="联系手机号">
-                    <el-input v-model="ruleForm.phone"></el-input>
+                    <el-input v-model="ruleForm.phone" type="number"></el-input>
                      </el-form-item>
                       <app-map @map-submit="mapEvent" :show-dialog="false"
                                                               :address="ruleForm.address"
@@ -1107,6 +1107,9 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 attr_default_name: '',
                 is_area_limit: 0,
                 area_limit: [{list: []}],
+                phone:"",
+                latitude:"",
+                longitude:""
             };
             let rules = {
                 cats: [
