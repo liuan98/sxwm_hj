@@ -417,7 +417,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                                               :address="goods_warehouse.address"
                                                               :lat="1"
                                                               :long="1">
-                                                       //  <el-button size="small">展开地图</el-button>
+
                                                      </app-map>
                         </el-row>
                         </el-card>

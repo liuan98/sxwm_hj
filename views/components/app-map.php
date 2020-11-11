@@ -129,6 +129,12 @@
                 return `width:${width};height:${height};`;
             },
         },
+        mouted(){
+           if(this.showDialog==false){
+             this.newAddress = this.address ? this.address : '';
+                           this.initMap();
+           }
+        },
         methods: {
             dialogOpened() {
                 this.newAddress = this.address ? this.address : '';
