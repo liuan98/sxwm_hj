@@ -132,8 +132,12 @@
         mounted(){
            if(this.showDialog==false){
            console.log(123)
-             this.newAddress = this.address ? this.address : '';
-                           this.initMap();
+
+           setTimeout(()=>{
+            this.newAddress = this.address ? this.address : '';
+                                      this.initMap();
+           },1000)
+
            }
         },
         methods: {
