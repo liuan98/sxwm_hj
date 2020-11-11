@@ -154,8 +154,8 @@ showAddress(map, marker)
                         address += "纬度：" + latlng.lat() + "<br />";
                         address += "经度：" + latlng.lng();
                          console.log(address)
-                        infowindow.setContent(address);
-                        infowindow.open(map, marker);
+                        this.infowindow.setContent(address);
+                        this.infowindow.open(map, marker);
                         transfer(latlng.lat(),latlng.lng());
                     }
                 } else {
