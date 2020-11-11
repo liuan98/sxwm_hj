@@ -129,7 +129,7 @@
                 return `width:${width};height:${height};`;
             },
         },
-        mouted(){
+        mounted(){
            if(this.showDialog==false){
            console.log(123)
              this.newAddress = this.address ? this.address : '';
