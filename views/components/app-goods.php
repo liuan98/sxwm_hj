@@ -411,12 +411,12 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                                <el-card shadow="never" class="mt-12" style="flex:1">
                         <el-row>
                         <el-form-item label="联系手机号">
-                    <el-input v-model="goods_warehouse.phone"></el-input>
+                    <el-input v-model="ruleForm.phone"></el-input>
                      </el-form-item>
                       <app-map @map-submit="mapEvent" :show-dialog="false"
-                                                              :address="goods_warehouse.address"
-                                                              :lat="goods_warehouse.latitude?goods_warehouse.latitude:0"
-                                                              :long="goods_warehouse.longitude?goods_warehouse.longitude:0">
+                                                              :address="ruleForm.address"
+                                                              :lat="ruleForm.latitude?ruleForm.latitude:0"
+                                                              :long="ruleForm.longitude?ruleForm.longitude:0">
 
                                                      </app-map>
                         </el-row>
