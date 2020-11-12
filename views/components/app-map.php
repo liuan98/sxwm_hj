@@ -41,7 +41,8 @@
                 <el-button type="primary" @click="confirm">确 定</el-button>
             </div>
         </el-dialog>
-         <el-form label-width="80px" size="small" v-if="!showDialog">
+        <div v-if="!showDialog">
+         <el-form label-width="80px" size="small" >
                         <el-row>
                             <el-col :span="12">
                                 <el-form-item label="地址搜索">
@@ -67,9 +68,7 @@
                     </el-form>
                     <div class="map" id="container" :style="style"></div>
                     <span style="height:30px;display:none" id="city"></span>
-                    <div slot="footer" class="dialog-footer" v-if="showDialog">
-                        <el-button type="primary" @click="confirm">确 定</el-button>
-                    </div>
+</div>
         <div @click="dialogVisible = !dialogVisible" style="display: inline-block">
             <slot></slot>
         </div>
