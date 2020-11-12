@@ -101,6 +101,7 @@ class SettingForm extends Model
     public $is_required_position;
     public $is_share_tip;
     public $rate;
+    public $describe;
 
     //购物车
     public $is_show_cart;
@@ -124,7 +125,7 @@ class SettingForm extends Model
     {
         return [
             [['name'], 'trim',],
-            [['contact_tel','minordermoney','rate', 'kdniao_mch_id', 'kdniao_api_key', 'member_integral_rule',
+            [['contact_tel','minordermoney','rate','describe','kdniao_mch_id', 'kdniao_api_key', 'member_integral_rule',
                 'small_app_id', 'small_app_url', 'small_app_pic', 'customer_services_pic',
                 'dial_pic', 'web_service_url', 'web_service_pic', 'quick_navigation_closed_pic',
                 'quick_navigation_opened_pic', 'quick_map_pic', 'quick_map_address', 'longitude', 'latitude',
