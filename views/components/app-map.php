@@ -95,7 +95,7 @@
             title: String,
             showDialog:{
             type:Boolean,
-            default:false
+            default:true
             }
         },
 
