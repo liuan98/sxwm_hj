@@ -218,6 +218,10 @@
                                         <el-input v-model="ruleForm.setting.small_app_url"
                                                   placeholder="请输入跳转小程序路径">
                                         </el-input>
+                                    </el-form-item>  <el-form-item label="商品详情提示文字" label-width="150px">
+                                        <el-input v-model="ruleForm.setting.describe"
+                                                  placeholder="修改所有商品详情页提示文字，限20字内" maxlength="20">
+                                        </el-input>
                                     </el-form-item>
                                 </el-form-item>
                             </div>
