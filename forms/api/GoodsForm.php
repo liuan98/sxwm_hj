@@ -14,6 +14,7 @@ use app\forms\common\goods\CommonGoods;
 use app\forms\common\goods\CommonGoodsDetail;
 use app\models\CityDeliverySetting;
 use app\models\Mall;
+use app\models\MallSetting;
 use app\models\Model;
 use app\models\User;
 use yii\db\Exception;
@@ -101,7 +102,8 @@ class GoodsForm extends Model
                     $res['attr_groups'][$k]['attr_list'][$l]['pic_url'] = $temp[$w['attr_id']] ?: "";
                 }
             }
-
+            $mallsetting = MallSetting::findOne([['id'=>84]]);
+            $res['setting']['describe'] = (isset($mallsetting->value) && !empty($mallsetting->value))?$mallsetting->value:'';
             $model = CityDeliverySetting::findOne(['key' => 'address', 'is_delete' => 0, 'mall_id' => \Yii::$app->mall->id]);
             return [
                 'code' => ApiCode::CODE_SUCCESS,
