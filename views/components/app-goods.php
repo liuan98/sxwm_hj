@@ -1235,6 +1235,9 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 this.getPermissions();
             } else {
                 this.is_show_share = 0
+                setTimeout(()=>{
+                     this.showMap=true
+                },3000)
             }
             this.getSvip();
         },
@@ -1407,7 +1410,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                                 self.$message.success(e.data.msg);
                                 console.log(self.cForm)
                                 console.log(self.attrGroups)
-                              
+
                                 if (typeof this.referrer === 'object') {
                                     navigateTo(this.referrer)
                                 } else {
