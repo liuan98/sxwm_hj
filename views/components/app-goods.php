@@ -1235,10 +1235,11 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 this.getPermissions();
             } else {
                 this.is_show_share = 0
-                setTimeout(()=>{
-                     this.showMap=true
-                },3000)
+
             }
+              setTimeout(()=>{
+                                 this.showMap=true
+                            },3000)
             this.getSvip();
         },
         watch: {
