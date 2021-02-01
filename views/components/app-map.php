@@ -30,7 +30,7 @@
                     </el-col>
                     <el-col :span="12">
                         <el-form-item label="纬度|经度">
-                            <el-input disabled v-model="lat_long"></el-input>
+                            <el-input v-model="lat_long"></el-input>
                         </el-form-item>
                     </el-col>
                 </el-row>
@@ -61,7 +61,7 @@
                             </el-col>
                             <el-col :span="12">
                                 <el-form-item label="纬度|经度">
-                                    <el-input disabled v-model="lat_long"></el-input>
+                                    <el-input  v-model="lat_long"></el-input>
                                 </el-form-item>
                             </el-col>
                         </el-row>
