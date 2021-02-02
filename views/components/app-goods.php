@@ -413,7 +413,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         <el-form-item label="联系手机号">
                     <el-input v-model="form.phone" type="number"></el-input>
                      </el-form-item>
-                      <app-map v-if="showMap" @map-submit="mapEvent" :show-dialog="false"
+                      <app-map v-if="showMap" @map-submit="mapEvent" @lat_long="lat_long" :show-dialog="false"
                                                               :address="form.address"
                                                               :lat="form.latitude?form.latitude:0"
                                                               :long="form.longitude?form.longitude:0">
@@ -1290,6 +1290,18 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                         self.form.latitude=e.lat;
                         self.form.longitude=e.long;
                         console.log(self.form)
+                    },
+                    //手动输入地址
+                    lat_long(e){
+                    this.lat_long=""
+                    try{
+                     lat_long=e.split(",")
+                    }catch(e){
+                    }
+                    if(lat_long.length==2){
+                        this.form.latitude=lat_long[0]
+                        this.form.longitude=lat_long[1]
+                    }
                     },
             showPreview() {
                 this.$refs.preview.previewGoods();
