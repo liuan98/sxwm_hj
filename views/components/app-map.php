@@ -146,7 +146,7 @@
             //修改经纬度
             changeLat(e){
             console.log(e)
-            this.$emit("lat_long",e)
+            this.$emit("lat_long",this.lat_long)
             },
             dialogOpened() {
                 this.newAddress = this.address ? this.address : '';
