@@ -1258,6 +1258,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
         computed: {
             cForm() {
                 let form = {};
+                console.log(this.ruleForm,"ruleForm")
                 let ruleForm = JSON.parse(JSON.stringify(this.ruleForm));
                 if (this.form) {
                     form = Object.assign(ruleForm, JSON.parse(JSON.stringify(this.form)));
@@ -1267,6 +1268,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 if (getQuery('id')) {
                     form.id = getQuery('id')
                 }
+                console.log(form)
                 return form;
             },
             cRule() {
