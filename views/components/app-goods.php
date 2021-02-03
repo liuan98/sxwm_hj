@@ -1261,7 +1261,7 @@ Yii::$app->loadViewComponent('app-goods-share', __DIR__ . '/goods');
                 console.log(this.ruleForm,"ruleForm")
                 let ruleForm = JSON.parse(JSON.stringify(this.ruleForm));
                 if (this.form) {
-                    form = Object.assign(ruleForm, JSON.parse(JSON.stringify(this.form)));
+                    form = Object.assign(JSON.parse(JSON.stringify(this.form)),ruleForm);
                 } else {
                     form = ruleForm;
                 }
